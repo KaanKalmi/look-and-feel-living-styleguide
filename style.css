@@ -565,7 +565,7 @@
   .topic {
     border-right: 0;
     padding: 1.2em;
-    grid-area: b;
+    grid-area: auto 
   }
 
   .wel {
@@ -586,9 +586,9 @@
   left: -12%;
 }
 
-.zwart {
-  position: absolute;
-  bottom: -120%;
+.hexcode {
+  position: relative;
+  bottom: -100%;
   left: -12%;
 }
 
@@ -598,30 +598,18 @@
   left: 12%;
 }
 
-.paars {
-  position: relative;
-  bottom: -123%;
-}
 
 .green {
   position: relative;
   bottom: -115%;
 }
 
-.groen {
-  position: relative;
-  bottom: -122%;
-}
 
 .white {
   position: relative;
   top: 115%;
 }
 
-.wit {
-  position: relative;
-  top: 122%;
-}
 
 .orange {
   position: relative;
