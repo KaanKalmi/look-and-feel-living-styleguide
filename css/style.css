@@ -85,7 +85,7 @@
 
 body {
   margin: 0;
-  font-family: "Halton", serif;
+  font-family: "Halton", sans-serif;
   font-weight: normal;
   font-size: 1.5em;
   display: block;
@@ -134,4 +134,5 @@ h4 {
 p {
   margin: 1em 0 0.5em 0;
   font-weight: 100;
+  font-family: "halton", sans-serif;
 }
