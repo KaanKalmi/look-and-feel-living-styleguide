@@ -1,10 +1,10 @@
-@import url(/css/01style.css);
-@import url(/css/02color.css);
-@import url(/css/03typography.css);
-@import url(/css/04navigation.css);
-@import url(/css/05button.css);
-@import url(/css/06graphsandtables.css);
-@import url(/css/07forms.css);
+@import url(./01style.css);
+@import url(./02color.css);
+@import url(./03typography.css);
+@import url(./04navigation.css);
+@import url(./05button.css);
+@import url(./06graphsandtables.css);
+@import url(./07forms.css);
 
 /*Algmene css*/
 @font-face {
