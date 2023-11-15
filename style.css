@@ -410,8 +410,7 @@
   }
 }
 
-/*medium screen*/
-
+/*Medium screen*/
 @media (min-width: 415px) {
   body {
     margin: 0;
@@ -588,6 +587,7 @@
   }
 }
 
+/*Large screen*/
 @media (min-width:1024px) {
   /*large screens*/
   body {
