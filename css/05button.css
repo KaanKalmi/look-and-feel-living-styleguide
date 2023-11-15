@@ -1,0 +1,47 @@
+.button-topic {
+    grid-template-areas:
+      "a a"
+      "b b
+      "b b"
+    ;
+  }
+  
+  .button .title-topic {
+    grid-area: a;
+  }
+  
+  .button {
+    margin: 0 0.5em;
+    padding: 0.75em 2em;
+    font-size: 0.65em;
+    text-transform: uppercase;
+    border-radius: 1000px;
+    border-style: none;
+    color: #272932;
+    background-color: #947eb0;
+    cursor: pointer;
+    grid-area: b;
+  }
+  
+  .button:disabled {
+    cursor: not-allowed;
+    opacity: 50%;
+  }
+  
+  .destructive {
+    background-color: #fb8b24;
+    cursor: disabled;
+  }
+  
+  .recommended {
+    background-color: #519879;
+  }
+  
+  .minor {
+    background-color: transparent;
+    color: #519879;
+  }
+  
+  .minor:hover {
+    text-decoration: underline;
+  }
