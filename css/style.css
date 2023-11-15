@@ -1,0 +1,137 @@
+@import url(/css/01style.css);
+@import url(/css/02color.css);
+@import url(/css/03typography.css);
+@import url(/css/04navigation.css);
+@import url(/css/05button.css);
+@import url(/css/06graphsandtables.css);
+@import url(/css/07forms.css);
+
+/*Algmene css*/
+@font-face {
+  font-family: "Halton";
+  src: url(assets/Halton/Halton\ regular.otf);
+}
+
+@font-face {
+  font-family: "Halton";
+  src: url(/assets/Halton/Halton\ regular-italic.otf );
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Halton";
+  src: url(/assets/Halton/Halton\ bold.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halton-bold";
+  src: url(/assets/Halton/Halton\ bold.otf) format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Halton";
+  src: url(/assets/Halton/Halton\ bold-italic.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Halton";
+  src: url(/assets/Halton/Halton\ light.otf);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halton";
+  src: url(assets/Halton/Halton\ light-italic.otf);
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Halton";
+  src: url(/assets/Halton/Halton\ thin.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Halton";
+  src: url(/assets/Halton/Halton\ thin-italic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  src: url(assets/Halton/Halton\ regular.otf) format("opentype");
+  /* url(assets/Halton/Halton\ regular-italic.otf) format('opentype'),
+    url(assets/Halton/Halton\ bold.otf) format('opentype'),
+    url(assets/Halton/Halton\ bold-italic.otf) format('opentype'),
+    url(assets/Halton/Halton\ light.otf) format('opentype'),
+    url(assets/Halton/Halton\ light-italic.otf)   format('opentype'),
+    url(assets/Halton/Halton\ thin.otf) format('opentype'),
+    url(assets/Halton/Halton\ thin-italic.otf) format('opentype'); */
+}
+
+body {
+  margin: 0;
+  font-family: "Halton", serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  display: block;
+  background-color: #272932;
+  color: #ecf8f8;
+}
+
+header {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #ecf8f8;
+}
+
+main {
+  margin: 0 10em 10em 10em;
+}
+
+h1 {
+  margin: 0.5em 0 0 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  align-items: center;
+  margin: 0 0 1em 0;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #947eb0;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 0.5px;
+  background: #ecf8f8;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+p {
+  margin: 1em 0 0.5em 0;
+  font-weight: 100;
+}
