@@ -759,7 +759,7 @@ small {
     grid-template-areas:
       "a a"
       "b b
- "b b"
+      "b b"
     ;
   }
 
@@ -805,36 +805,5 @@ small {
 
   /*Grid layout*/
 
-  .a {
-    display: grid;
-    grid-template-areas:
-      "a a"
-      "b c"
-      "b d";
-    grid-template-columns: 1fr 1fr;
-    padding: 1em;
-  }
 
-  .title-topic {
-    grid-area: a;
-  }
-
-  .topic {
-    border-right: 0;
-    padding: 1.2em;
-    grid-area: b;
-  }
-
-  .wel {
-    border-bottom: 1px solid;
-    padding: 1.2em;
-    grid-area: c;
-  }
-
-  .niet {
-    padding: 1.2em;
-    grid-area: d;
-  }
-
-  
 }
