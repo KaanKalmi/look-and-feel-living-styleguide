@@ -42,26 +42,13 @@
 @font-face {
   font-family: "Halton";
   src: url(/assets/Halton/Halton\ light.otf);
-  font-weight: lighter;
+  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Halton";
   src: url(assets/Halton/Halton\ light-italic.otf);
-  font-weight: lighter;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ thin.otf);
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ thin-italic.otf);
   font-weight: 100;
   font-style: italic;
 }
@@ -112,7 +99,7 @@ h1 {
 
 h2 {
   align-items: center;
-  margin: 0 0 1em 0;
+  margin: 1.5em 0 1em 0;
   position: relative;
   text-transform: uppercase;
   font-size: 1.25em;
@@ -127,12 +114,104 @@ h2::after {
   background: #ecf8f8;
 }
 
+h3 {
+  margin-top: 1em;
+}
+
+h3:first-child {
+  margin: 0;
+  padding: 0;
+}
+
 h4 {
   text-transform: uppercase;
 }
 
 p {
-  margin: 1em 0 0.5em 0;
   font-weight: 100;
   font-family: "halton", sans-serif;
 }
+
+/* LAY-OUT */
+.title {
+  grid-area: titel;
+  width: 100%;
+}
+
+.voorbeeld {
+  grid-area: voorbeeld;
+  margin-bottom: 2em;
+}
+
+section .info {
+  grid-area: info;
+  margin: 0 .5em;
+}
+
+section pre {
+  grid-area: code;
+  position: relative;
+
+  margin: 0 .5em;
+  background-color: #ecf8f8;
+  border-radius: .25em;
+}
+
+pre::before {
+  content: 'HTML';
+  font-size: .8em;
+  color: #272932;
+  position: absolute;
+  top: .4em;
+  right: .4em;
+}
+
+section code {
+  margin: 0;
+  padding: 0;
+  color: #272932;
+  position: relative;
+  width: 100%;
+  white-space: pre;
+
+}
+
+
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "titel titel"
+    "voorbeeld voorbeeld"
+    "info code"
+  ;
+}
+
+/* Do's Don'ts */
+
+.info .do {
+  margin-bottom: .5em;
+  padding: .5em;
+  border-radius: .25em;
+  background-color: #519879;
+  color: #272932;
+}
+
+.info .do h3 {
+  text-transform: uppercase;
+}
+
+.info .dont {
+  padding: .5em;
+  border-radius: .25em;
+  background-color: #fb8b24;
+  color: #272932;
+}
+
+.info .dont h3 {
+  text-transform: uppercase;
+}
+
+
+
