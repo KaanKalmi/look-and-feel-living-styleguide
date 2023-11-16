@@ -105,7 +105,6 @@
             <li>Use .25em radius on articles.</li>
             <li>Use 2.5em radius on buttons.</li>
           </ul>
-          </p>
         </div>
         <div class="dont">
           <h3>Don'ts</h3>
@@ -114,7 +113,6 @@
             <li>Don`t use a radius that is`t an increment of .25em.</li>
             <li>Don`t use a different radius on components which have a set radius. </li>
           </ul>
-          </p>
         </div>
 
       </article>
@@ -233,11 +231,18 @@
       <article class="info">
         <div class="do">
           <h3>Do's</h3>
-          <p>This is example text.</p>
+
+          <p>Use <span class="bold code_info">class="button"</span> all the buttons</p>
+          <p>Add <span class="bold code_info">class="button reccommended"</span> by reccommended buttons</p>
+          <p>Add <span class="bold code_info">class="button minor"</span> by minor buttons</p>
+          <p>Add <span class="bold code_info">class="button distructive"</span> by minor distructive</p>
         </div>
         <div class="dont">
           <h3>Don'ts</h3>
-          <p>This is example text.</p>
+          <ul>
+            <li>Don't create/add other classes!!</li>
+            <li>Do not create different buttons than those shown in the example.</li>
+          </ul>
         </div>
 
       </article>
@@ -259,6 +264,7 @@
   &lt;button type="button" class="button destructive"&gt;  
     Distrucitve 
   &lt;/button&gt;
+
 
   /* DISABLED */
   
@@ -308,56 +314,128 @@
       <div class="title">
         <h2>07. Forms</h2>
       </div>
-      <article class="example">
-        <h3>Groups</h3>
-        <!-- <label for="withCheckbox">Met checkbox</label>
-      <div class="form_group">
-        <input class="form-group_input" id="withCheckbox" type="text" placeholder="Voorbeeld tekst" autofocus/>
-        <div class="form-group_attachment checkbox">
-          <input type="checkbox" id="markAsExact"/>
-          <span class="checkmark"></span>
-        </div>
-      </div> -->
-        <label for="withButton">With a button</label>
-        <div class="form_group">
-          <input class="form-group_input" id="withButton" type="text" placeholder="Example text">
-          <div class="form-group_attachment">
-            <button type="button" class="button recommended">Send</button>
-          </div>
-        </div>
-        <label for="withButton">With example text.</label>
-        <div class="form_group">
-          <input class="form-group_input" id="withButton" type="text" placeholder="Example text">
-          <small class="form-group_help">This is example text so you can see how it looks.</small>
-        </div>
-        <h3>Validation</h3>
-        <label for="withButton">Standard</label>
-        <input class="fs-field-group__input" id="withHelpText" type="text" placeholder="Example Text"
-          aria-describedby="helpText" />
+      <article class="example forms_sections">
+        <article class="forms_sections">
+            <h3>Groups</h3>
+            <!-- <label for="withCheckbox">Met checkbox</label>
+          <div class="form_group">
+            <input class="form-group_input" id="withCheckbox" type="text" placeholder="Voorbeeld tekst" autofocus/>
+            <div class="form-group_attachment checkbox">
+              <input type="checkbox" id="markAsExact"/>
+              <span class="checkmark"></span>
+            </div>
+          </div> -->
+            <label for="withButton">With a button</label>
+            <div class="form_group">
+              <input class="form-group_input" id="withButton" type="text" placeholder="Example text">
+              <div class="form-group_attachment">
+                <button type="button" class="button recommended">Send</button>
+              </div>
+            </div>
+            <label for="withHelpText">With help text.</label>
+            <div class="form_group">
+              <input class="form-group_input" id="withHelpText" type="text" placeholder="Example text">
+              <small class="form-group_help">This is example text so you can see how it looks.</small>
+            </div>
+            <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+      
+            </article>
+     <pre><code>
+  /* WITH A BUTTON */
 
-        <label for="withButton">Required<span class="req">*</span></label>
-        <input class="form-group_input" id="withButton" type="text" placeholder="Example text" required>
+  &lt;label for="withButton"&gt; With a button &lt;label&gt;
+  &lt;div class="form_group"&gt;
+  &lt;input class="form-group_input" id="withButton" 
+  type="text" placeholder="Example text"&gt;
+  &lt;div class="form-group_attachment"&gt;
+    &lt;button type="button" class="button recommended"&gt;  
+      Send
+    &lt;/button&gt;
+  &lt;/div&gt;
+
+
+        </code></pre>
+            </div>
+        </article>
+
+        <article class="forms_sections">
+        <h3>Validation</h3>
+        <label for="defaultState">Standard</label>
+        <input class="fs-field-group__input" id="defaultState" type="text" placeholder="Example Text">
+
+        <label for="requiredState">Required<span class="req">*</span></label>
+        <input class="form-group_input" id="requiredState" type="text" placeholder="Example text" required>
         <p><span class="req">*</span> - Required field</p>
 
-        <label for="withButton">Valid</label>
+        <label for="validState">Valid</label>
         <div class="form_validation valid">
-          <input id="defaultState" type="text" placeholder="Example text" aria-describedby="validMessage">
+          <input id="validState" type="text" placeholder="Example text">
           <p>Save changes</p>
         </div>
-        <label for="withButton">Invalid</label>
+        <label for="invalidState">Invalid</label>
         <div class="form_validation invalid">
-          <input id="defaultState" type="text" placeholder="Example text" aria-describedby="validMessage">
+          <input id="invalidState" type="text" placeholder="Example text">
           <p>Save changes</p>
         </div>
+        <div class="dodont_forms">
+          <article class="info">
+            <div class="do">
+              <h3>Do's</h3>
+              <p>This is example text.</p>
+            </div>
+            <div class="dont">
+              <h3>Don'ts</h3>
+              <p>This is example text.</p>
+            </div>
+    
+          </article>
+          <pre><code>
+              
+              
+            </code></pre>
+          </div>
+      </article>
 
+      <article class="forms_sections">
         <h3>Text field</h3>
-        <label for="withButton">Text input</label>
-        <input class="fs-field-group__input" id="withHelpText" type="text" placeholder="Example Text"
-          aria-describedby="helpText">
-        <label for="withButton">Text field</label>
-        <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+        <label for="textInput">Text input</label>
+        <input class="fs-field-group__input" id="textInput" type="text" placeholder="Example Text">
+        <label for="textField">Text field</label>
+        <textarea id="textField" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+
+        <div class="dodont_forms">
+          <article class="info">
+            <div class="do">
+              <h3>Do's</h3>
+              <p>This is example text.</p>
+            </div>
+            <div class="dont">
+              <h3>Don'ts</h3>
+              <p>This is example text.</p>
+            </div>
+    
+          </article>
+          <pre><code>
+              
+              
+            </code></pre>
+          </div>
+      </article>
+
+
+      
+      <article class="forms_sections">
         <h3>Options menu</h3>
-        <label for="withButton">Selection</label>
+        <label for="select">Selection</label>
         <select id="select">
           <option>Option one</option>
           <option>Option two</option>
@@ -367,6 +445,26 @@
           <option>Option six</option>
         </select>
 
+        <div class="dodont_forms">
+          <article class="info">
+            <div class="do">
+              <h3>Do's</h3>
+              <p>This is example text.</p>
+            </div>
+            <div class="dont">
+              <h3>Don'ts</h3>
+              <p>This is example text.</p>
+            </div>
+    
+          </article>
+          <pre><code>
+              
+              
+            </code></pre>
+          </div>
+      </article>
+
+      <article class="forms_sections">
         <h3>Checkboxes</h3>
         <ul class="checkmark">
           <li>
@@ -374,27 +472,32 @@
             <label for="choiceA">Choice A</label>
           </li>
           <li>
-            <input name="checkbox" type="checkbox" id="choiceA" checked>
-            <label for="choiceA">Choice B</label>
+            <input name="checkbox" type="checkbox" id="choiceB" checked>
+            <label for="choiceB">Choice B</label>
           </li>
         </ul>
+
+        <div class="dodont_forms">
+          <article class="info">
+            <div class="do">
+              <h3>Do's</h3>
+              <p>This is example text.</p>
+            </div>
+            <div class="dont">
+              <h3>Don'ts</h3>
+              <p>This is example text.</p>
+            </div>
+    
+          </article>
+          <pre><code>
+              
+              
+            </code></pre>
+          </div>
       </article>
 
-      <article class="info">
-        <div class="do">
-          <h3>Do's</h3>
-          <p>This is example text.</p>
-        </div>
-        <div class="dont">
-          <h3>Don'ts</h3>
-          <p>This is example text.</p>
-        </div>
+    </article>
 
-      </article>
-      <pre><code>
-          
-          
-        </code></pre>
     </section>
   </main>
 </body>

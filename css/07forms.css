@@ -4,8 +4,15 @@
 }
 .forms h3 {
     padding: 0;
-    margin: 2em 0 0.5em;
+    margin: 0;
 }
+
+.example .forms_sections {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 0.5px solid #ecf8f8;
+}
+
 label:first-child {
     margin-top: 0;
 }
@@ -172,4 +179,20 @@ small {
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
+}
+
+
+.forms_container pre {
+  grid-template-areas: code;
+
+}
+
+.dodont_forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "info code"
+  ;
+
+  margin-top: 2em;
 }

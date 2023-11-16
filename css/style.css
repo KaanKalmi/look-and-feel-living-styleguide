@@ -198,6 +198,14 @@ section {
   color: #272932;
 }
 
+.info p {
+  margin-bottom: 1em;
+}
+
+.info ul {
+  margin-bottom: 1em;
+}
+
 .info .do h3 {
   text-transform: uppercase;
 }
@@ -212,4 +220,23 @@ section {
 .info .dont h3 {
   text-transform: uppercase;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.do .code_info {
+  background-color: #519879;
+  filter: brightness(120%);
+  padding: 0 .2em;
+  border-radius: .25em;
+}
+
+.dont .code_info {
+  background-color: #fb8b24;
+  filter: brightness(120%);
+  padding: 0 .2em;
+  border-radius: .25em;
+}
+
 
