@@ -41,7 +41,7 @@
 }
 
 .example_typography h3 {
-    font-size: .8em;
+    font-size: .5em;
     font-weight: 600;
     font-family: 'Halton';
     grid-area: h3;
@@ -50,7 +50,7 @@
 }
 
 .example_typography p {
-    font-size: .7em;
+    font-size: .5em;
     font-weight: 600;
     font-family: 'Halton';
     grid-area: h3;
@@ -59,7 +59,7 @@
 }
 
 .example_typography h4 {
-    font-size: .8em;
+    font-size: .5em;
     font-weight: 600;
     font-family: 'Halton';
     grid-area: h4;
@@ -68,7 +68,7 @@
 }
 
 .example_typography p {
-    font-size: .7em;
+    font-size: .5em;
     font-weight: 600;
     font-family: 'Halton';
     grid-area: h4;
@@ -84,10 +84,14 @@
     display: initial;
 }
 
-.new-example {}
+/* .new-example {}
 
-.new-example__header {}
+.new-example__header {} */
 
+
+.new-example {
+    margin: 1.5em;
+}
 .new-example__content {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -101,4 +105,18 @@
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+.new-example h5 {
+    font-size: .6em;
+}
+
+.new-example p {
+    font-size: .6em;
+}
+
+.h3 {
+    font-size: .5em;
+    font-family: halton-italic;
+    grid-area: h3;
 }

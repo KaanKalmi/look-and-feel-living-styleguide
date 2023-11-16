@@ -147,28 +147,28 @@ p {
 
 section .info {
   grid-area: info;
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
 
 section pre {
   grid-area: code;
   position: relative;
 
-  margin: 0 .5em;
+  margin: 0 0.5em;
   background-color: #ecf8f8;
-  border-radius: .25em;
+  border-radius: 0.25em;
 
   /* Cadeautje van Luuk */
   overflow: auto;
 }
 
 pre::before {
-  content: 'HTML';
-  font-size: .8em;
+  content: "HTML";
+  font-size: 0.8em;
   color: #272932;
   position: absolute;
-  top: .4em;
-  right: .4em;
+  top: 0.4em;
+  right: 0.4em;
 }
 
 section code {
@@ -178,10 +178,7 @@ section code {
   position: relative;
   width: 100%;
   white-space: pre;
-
 }
-
-
 
 section {
   display: grid;
@@ -189,16 +186,15 @@ section {
   grid-template-areas:
     "titel titel"
     "voorbeeld voorbeeld"
-    "info code"
-  ;
+    "info code";
 }
 
 /* Do's Don'ts */
 
 .info .do {
-  margin-bottom: .5em;
-  padding: .5em;
-  border-radius: .25em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.25em;
   background-color: #519879;
   color: #272932;
 }
@@ -216,8 +212,8 @@ section {
 }
 
 .info .dont {
-  padding: .5em;
-  border-radius: .25em;
+  padding: 0.5em;
+  border-radius: 0.25em;
   background-color: #fb8b24;
   color: #272932;
 }
@@ -233,13 +229,13 @@ section {
 .do .code_info {
   background-color: #519879;
   filter: brightness(120%);
-  padding: 0 .2em;
-  border-radius: .25em;
+  padding: 0 0.2em;
+  border-radius: 0.25em;
 }
 
 .dont .code_info {
   background-color: #fb8b24;
   filter: brightness(120%);
-  padding: 0 .2em;
-  border-radius: .25em;
+  padding: 0 0.2em;
+  border-radius: 0.25em;
 }
