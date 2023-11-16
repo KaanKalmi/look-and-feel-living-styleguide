@@ -11,6 +11,7 @@
     margin-bottom: .5em;
     margin-left: 4em;
     padding-top: .5em;
+    text-transform: uppercase;
 }
 
 .example_button {
@@ -18,7 +19,7 @@
     position: relative;
     text-align: center;
     height: 2em;
-    width: 7.75em;
+    width: 9.25em;
     background-color: #ecf8f8;
     color: #272932;
     border-radius: 2.5em;
@@ -27,6 +28,7 @@
     margin-left: 2.5em;
     margin-right: 2.5em;
     padding-top: .5em;
+    text-transform: uppercase;
 }
 
 .example_icon {
@@ -40,7 +42,8 @@
     border-radius: 3.5em;
     font-size: .75em;
     margin-bottom: .5em;
-    padding-top: .75em;
+    padding-top: 1em;
+    text-transform: uppercase;
 }
 
 q {
