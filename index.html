@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CrossmarX living styleguide</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/01color.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrossmarX living styleguide</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/01color.css" />
+</head>
 
 <head>
   <meta charset="UTF-8">
@@ -238,42 +239,42 @@
                 adventures.
               </span>
             </section>
-            </div>
-            </article>
-            
-            <article class="new-example">
-              <header class="new-example__header">
-                <h3>Heading 3</h3>
-              </header>
-    
-              <div class="new-example__content">
-    
-                <section>
-                  <h4>Code example</h4>
-    
-                  <div>
-    
-                    <article>
-                      <h6>Font-family</h6>
-                      <p>'halton-italic'</p>
-                    </article>
-    
-                    <article>
-                      <h6>Font-size</h6>
-                      <p>.5em</p>
-                    </article>
-    
-                  </div>
-                </section>
-    
-                <section>
-                  <h4>Visual example</h4>
-    
-                  <span class="h3">
-                    They dance across the dashboard, telling tales of the day's
-                    adventures.
-                  </span>
-                </section>
+          </div>
+        </article>
+
+        <article class="new-example">
+          <header class="new-example__header">
+            <h3>paragraph</h3>
+          </header>
+
+          <div class="new-example__content">
+
+            <section>
+              <h4>Code example</h4>
+
+              <div>
+
+                <article>
+                  <h6>Font-family</h6>
+                  <p>'halton-italic'</p>
+                </article>
+
+                <article>
+                  <h6>Font-size</h6>
+                  <p>.5em</p>
+                </article>
+
+              </div>
+            </section>
+
+            <section>
+              <h4>Visual example</h4>
+
+              <span class="h3">
+                They dance across the dashboard, telling tales of the day's
+                adventures.
+              </span>
+            </section>
 
           </div>
         </article>
@@ -283,22 +284,40 @@
 
         <div class="do">
           <h3>Do's</h3>
-          <p>This is example text.</p>
+          <p>
+          <ul>
+            <li>
+              Only use h1 for page titles
+            </li>
+            <li>
+              Only use h2 for article headings
+            </li>
+            <li>
+              Only use paragraphs for text
+            </li>
+          </ul>
+          </p>
         </div>
 
         <div class="dont">
           <h3>Don'ts</h3>
-          <p>This is example text.</p>
+          <p>
+            <ul>
+              <li>
+                Dont use h1 for article headings
+              </li>
+            </ul>
+          </p>
         </div>
 
       </article>
 
       <pre><code>
-      &lt;h1&gt; &lt;h1&gt;
-      &lt;h2&gt; &lt;h2&gt;
-      &lt;p&gt; &lt;p&gt;
+      &lt;h1&gt; text example &lt;h1&gt;
+      &lt;h2&gt; text example &lt;h2&gt;
+      &lt;p&gt; text example &lt;p&gt;
       </code></pre>
-    </div>
+      </div>
     </section>
 
     <section class="grid-container">
@@ -478,12 +497,14 @@
               <div class="do">
                 <h3>Do's</h3>
                 <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using form groups.</p>
-                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example text"&gt;</span></p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
+                    text"&gt;</span></p>
                 <p>Look at <span class="bold">05.Buttons</span> how you can chance the button color</p>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span
+                    class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
                 <p>Don't use a forms group without a <span class="bold code_info">&lt;label&gt;</span> </p>
               </div>
 
@@ -543,12 +564,15 @@
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using forms validations.</p>
-                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example text"&gt;</span></p>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using forms validations.
+                </p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
+                    text"&gt;</span></p>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span
+                    class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
                 <p>Don't use a forms validation without a <span class="bold code_info">&lt;label&gt;</span> </p>
               </div>
 
@@ -605,12 +629,16 @@
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using forms text field.</p>
-                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example text"&gt;</span> <span class="bold code_info">&lt;placeholder="Enter your message here"&gt;</span></p>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using forms text field.
+                </p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
+                    text"&gt;</span> <span class="bold code_info">&lt;placeholder="Enter your message here"&gt;</span>
+                </p>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span
+                    class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
                 <p>Don't use a forms validation without a <span class="bold code_info">&lt;label&gt;</span> </p>
               </div>
 
@@ -650,12 +678,14 @@
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                
-                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example text"&gt;</span>
+
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
+                    text"&gt;</span>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>Never use a <span class="bold code_info">&lt;label&gt;</span> element when using forms select menu.</p>
+                <p>Never use a <span class="bold code_info">&lt;label&gt;</span> element when using forms select menu.
+                </p>
               </div>
 
             </article>
@@ -692,14 +722,18 @@
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element <span class="bold">under</span> <span class="bold code_info">&lt;input&gt;</span> when using forms checkboxes.</p>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element <span
+                    class="bold">under</span> <span class="bold code_info">&lt;input&gt;</span> when using forms
+                  checkboxes.</p>
                 <p>You may change the placeholder text in <span class="bold code_info">&lt;label&gt;</span> </p>
-                <p>Make sure you chance the checkbox <span class="bold code_info">id</span> and <span class="bold code_info">&lt;label&gt;</span> when there are more options</p>
-                
+                <p>Make sure you chance the checkbox <span class="bold code_info">id</span> and <span
+                    class="bold code_info">&lt;label&gt;</span> when there are more options</p>
+
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span
+                    class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
                 <p>Don't use a forms checkbox without a <span class="bold code_info">&lt;label&gt;</span> </p>
               </div>
 

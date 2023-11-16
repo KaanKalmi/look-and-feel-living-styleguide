@@ -1,36 +1,9 @@
-.example_typography {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 3fr;
-    grid-template-areas:
-        "h3 h3"
-        "li1 h1"
-        "h4 h4"
-        "li2 h2";
-}
-
-.example_typography ul li:nth-child(1) {
-    list-style: none;
-    gap: 1em;
-    padding: 0;
-    margin: 0;
-    grid-area: li1;
-}
 
 .h1 {
     font-size: 1em;
     font-weight: 600;
     font-family: 'Halton-bold';
     grid-area: h1;
-}
-
-.example_typography ul li:nth-child(2) {
-    list-style: none;
-    gap: 1em;
-    padding: 0;
-    margin: 0;
-    grid-area: li2;
 }
 
 .h2 {
@@ -40,40 +13,11 @@
     grid-area: h2;
 }
 
-.example_typography h3 {
-    font-size: .5em;
-    font-weight: 600;
-    font-family: 'Halton';
+
+.h3 {
+    font-size: .75em;
+    font-family: halton-italic;
     grid-area: h3;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.example_typography p {
-    font-size: .5em;
-    font-weight: 600;
-    font-family: 'Halton';
-    grid-area: h3;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.example_typography h4 {
-    font-size: .5em;
-    font-weight: 600;
-    font-family: 'Halton';
-    grid-area: h4;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.example_typography p {
-    font-size: .5em;
-    font-weight: 600;
-    font-family: 'Halton';
-    grid-area: h4;
-    text-align: center;
-    margin-bottom: 1em;
 }
 
 .typography__content {
@@ -92,6 +36,7 @@
 .new-example {
     margin: 1.5em;
 }
+
 .new-example__content {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -113,10 +58,4 @@
 
 .new-example p {
     font-size: .6em;
-}
-
-.h3 {
-    font-size: .5em;
-    font-family: halton-italic;
-    grid-area: h3;
 }
