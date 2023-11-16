@@ -97,7 +97,7 @@
         <div class="example_button"> Example button</div>
         <div class="example_icon"> Icon</div>
         <q>Our radius system follows a rule where we have increments of .25em. This means that depending on the
-        component we round the edges by using multiplications of .25em.</q>
+          component we round the edges by using multiplications of .25em.</q>
       </article>
 
       <article class="info">
@@ -105,9 +105,11 @@
           <h3>Do's</h3>
           <p>
           <ul>
-            <li>Use .25em radius on articles.</li>
-            <li>Use 2.5em radius on buttons.</li>
+            <li>Use <span class="bold code_info">class="example"</span> for the standard radius on articles</li>
+            <li>Use <span class="bold code_info">class="button"</span> for the standard radius on buttons</li>
+            <li>Use <span class="bold code_info">class="icon"</span> for the standard radius on icons</li>
           </ul>
+          </p>
         </div>
         <div class="dont">
           <h3>Don'ts</h3>
@@ -116,6 +118,7 @@
             <li>Don`t use a radius that isn`t an increment of .25em.</li>
             <li>Don`t use a different radius on components which have a set radius. </li>
           </ul>
+          </p>
         </div>
 
       </article>
@@ -123,6 +126,8 @@
   &lt;button type="button" class="button"&gt;  Button &lt;/button&gt;
   
   &lt;article class="example"&gt; &lt;/article&gt;
+
+  &lt;img class="icon"&gt; &lt;/img&gt;
   </code></pre>
     </section>
 
@@ -175,9 +180,10 @@
 
       </article>
       <pre><code>
-          
-          
-        </code></pre>
+      &lt;h1&gt; &lt;h1&gt;
+      &lt;h2&gt; &lt;h2&gt;
+      &lt;p&gt; &lt;p&gt;
+      </code></pre>
     </section>
 
     <section class="grid-container">
@@ -195,18 +201,32 @@
       <article class="info">
         <div class="do">
           <h3>Do's</h3>
-          <p>This is example text.</p>
+          <p>
+          <ul>
+            <li>You can use <span class="bold code_info">class="V-nav"</span> or <span
+                class="bold code_info">class="H-nav"</span> </li>
+          </ul>
+          </p>
         </div>
         <div class="dont">
           <h3>Don'ts</h3>
-          <p>This is example text.</p>
+          <p>
+          <ul>
+            <li>Don`t move the navbar from the left side</li>
+            <li>Don`t add more classes to the navbar</li>
+          </ul>
+          </p>
         </div>
 
       </article>
       <pre> <code>
-        &lt;nav&gt;
-          
-        &lt;/nav&gt;
+      &lt;nav class="H-nav"&gt;
+        this is a horizontal navbar
+      &lt;/nav&gt;
+
+      &lt;nav class="V-nav"&gt;
+        this is a vertical navbar
+      &lt;/nav&gt;
            
         </code></pre>
     </section>
@@ -319,8 +339,8 @@
       </div>
       <article class="example forms_sections">
         <article class="forms_sections">
-            <h3>Groups</h3>
-            <!-- <label for="withCheckbox">Met checkbox</label>
+          <h3>Groups</h3>
+          <!-- <label for="withCheckbox">Met checkbox</label>
           <div class="form_group">
             <input class="form-group_input" id="withCheckbox" type="text" placeholder="Voorbeeld tekst" autofocus/>
             <div class="form-group_attachment checkbox">
@@ -328,19 +348,19 @@
               <span class="checkmark"></span>
             </div>
           </div> -->
-            <label for="withButton">With a button</label>
-            <div class="form_group">
-              <input class="form-group_input" id="withButton" type="text" placeholder="Example text">
-              <div class="form-group_attachment">
-                <button type="button" class="button recommended">Send</button>
-              </div>
+          <label for="withButton">With a button</label>
+          <div class="form_group">
+            <input class="form-group_input" id="withButton" type="text" placeholder="Example text">
+            <div class="form-group_attachment">
+              <button type="button" class="button recommended">Send</button>
             </div>
-            <label for="withHelpText">With help text</label>
-            <div class="form_group">
-              <input class="form-group_input" id="withHelpText" type="text" placeholder="Example text">
-              <small class="form-group_help">This is example text so you can see how it looks.</small>
-            </div>
-            <div class="dodont_forms">
+          </div>
+          <label for="withHelpText">With help text</label>
+          <div class="form_group">
+            <input class="form-group_input" id="withHelpText" type="text" placeholder="Example text">
+            <small class="form-group_help">This is example text so you can see how it looks.</small>
+          </div>
+          <div class="dodont_forms">
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
@@ -350,9 +370,9 @@
                 <h3>Don'ts</h3>
                 <p>This is example text.</p>
               </div>
-      
+
             </article>
-     <pre><code>
+            <pre><code>
   /* WITH A BUTTON */
 
   &lt;label for="withButton"&gt; With a button &lt;label&gt;
@@ -379,43 +399,43 @@
   &lt;/div&gt;
 
         </code></pre>
-            </div>
+          </div>
         </article>
 
         <article class="forms_sections">
-        <h3>Validation</h3>
-        <label for="defaultState">Standard</label>
-        <input class="fs-field-group__input" id="defaultState" type="text" placeholder="Example Text">
+          <h3>Validation</h3>
+          <label for="defaultState">Standard</label>
+          <input class="fs-field-group__input" id="defaultState" type="text" placeholder="Example Text">
 
-        <label for="requiredState">Required<span class="req">*</span></label>
-        <input class="form-group_input" id="requiredState" type="text" placeholder="Example text" required>
-        <p><span class="req">*</span> - Required field</p>
+          <label for="requiredState">Required<span class="req">*</span></label>
+          <input class="form-group_input" id="requiredState" type="text" placeholder="Example text" required>
+          <p><span class="req">*</span> - Required field</p>
 
-        <label for="validState">Valid</label>
-        <div class="form_validation valid">
-          <input id="validState" type="text" placeholder="Example text">
-          <p>Save changes</p>
-        </div>
+          <label for="validState">Valid</label>
+          <div class="form_validation valid">
+            <input id="validState" type="text" placeholder="Example text">
+            <p>Save changes</p>
+          </div>
 
-        <label for="invalidState">Invalid</label>
-        <div class="form_validation invalid">
-          <input id="invalidState" type="text" placeholder="Example text">
-          <p>Save changes</p>
-        </div>
+          <label for="invalidState">Invalid</label>
+          <div class="form_validation invalid">
+            <input id="invalidState" type="text" placeholder="Example text">
+            <p>Save changes</p>
+          </div>
 
-        <div class="dodont_forms">
-          <article class="info">
-            <div class="do">
-              <h3>Do's</h3>
-              <p>This is example text.</p>
-            </div>
-            <div class="dont">
-              <h3>Don'ts</h3>
-              <p>This is example text.</p>
-            </div>
-    
-          </article>
-          <pre><code>
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
   /* STANDARD */  
 
   &lt;label for="defaultState"&gt;Standard&lt;/label&gt;
@@ -454,28 +474,28 @@
 
             </code></pre>
           </div>
-      </article>
+        </article>
 
-      <article class="forms_sections">
-        <h3>Text field</h3>
-        <label for="textInput">Text input</label>
-        <input class="fs-field-group__input" id="textInput" type="text" placeholder="Example Text">
-        <label for="textField">Text field</label>
-        <textarea id="textField" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+        <article class="forms_sections">
+          <h3>Text field</h3>
+          <label for="textInput">Text input</label>
+          <input class="fs-field-group__input" id="textInput" type="text" placeholder="Example Text">
+          <label for="textField">Text field</label>
+          <textarea id="textField" rows="8" cols="48" placeholder="Enter your message here"></textarea>
 
-        <div class="dodont_forms">
-          <article class="info">
-            <div class="do">
-              <h3>Do's</h3>
-              <p>This is example text.</p>
-            </div>
-            <div class="dont">
-              <h3>Don'ts</h3>
-              <p>This is example text.</p>
-            </div>
-    
-          </article>
-          <pre><code>
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
   /* TEXT INPUT */   
 
   &lt;label for="textInput"&gt;Text input&lt;/label&gt;
@@ -489,35 +509,35 @@
   placeholder="Enter your message here"&gt;&lt;/textarea&gt;
             </code></pre>
           </div>
-      </article>
+        </article>
 
 
-      
-      <article class="forms_sections">
-        <h3>Options menu</h3>
-        <label for="select">Selection</label>
-        <select id="select">
-          <option>Option one</option>
-          <option>Option two</option>
-          <option>Option three</option>
-          <option>Option four</option>
-          <option>Option five</option>
-          <option>Option six</option>
-        </select>
 
-        <div class="dodont_forms">
-          <article class="info">
-            <div class="do">
-              <h3>Do's</h3>
-              <p>This is example text.</p>
-            </div>
-            <div class="dont">
-              <h3>Don'ts</h3>
-              <p>This is example text.</p>
-            </div>
-    
-          </article>
-          <pre><code>
+        <article class="forms_sections">
+          <h3>Options menu</h3>
+          <label for="select">Selection</label>
+          <select id="select">
+            <option>Option one</option>
+            <option>Option two</option>
+            <option>Option three</option>
+            <option>Option four</option>
+            <option>Option five</option>
+            <option>Option six</option>
+          </select>
+
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
   &lt;label for="select"&gt;Selection&lt;/label&gt;
   &lt;select id="select"&gt;
     &lt;option&gt; Option one &lt;/option&gt;
@@ -530,34 +550,34 @@
 
             </code></pre>
           </div>
-      </article>
+        </article>
 
-      <article class="forms_sections">
-        <h3>Checkboxes</h3>
-        <ul class="checkmark">
-          <li>
-            <input name="checkbox" type="checkbox" id="choiceA" checked>
-            <label for="choiceA">Choice A</label>
-          </li>
-          <li>
-            <input name="checkbox" type="checkbox" id="choiceB" checked>
-            <label for="choiceB">Choice B</label>
-          </li>
-        </ul>
+        <article class="forms_sections">
+          <h3>Checkboxes</h3>
+          <ul class="checkmark">
+            <li>
+              <input name="checkbox" type="checkbox" id="choiceA" checked>
+              <label for="choiceA">Choice A</label>
+            </li>
+            <li>
+              <input name="checkbox" type="checkbox" id="choiceB" checked>
+              <label for="choiceB">Choice B</label>
+            </li>
+          </ul>
 
-        <div class="dodont_forms">
-          <article class="info">
-            <div class="do">
-              <h3>Do's</h3>
-              <p>This is example text.</p>
-            </div>
-            <div class="dont">
-              <h3>Don'ts</h3>
-              <p>This is example text.</p>
-            </div>
-    
-          </article>
-          <pre><code>
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
   &lt;ul class="checkmark"&gt;
     &lt;li&gt;
       &lt;input name="checkbox" type="checkbox" 
@@ -573,9 +593,9 @@
               
             </code></pre>
           </div>
-      </article>
+        </article>
 
-    </article>
+      </article>
 
     </section>
   </main>
