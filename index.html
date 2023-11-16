@@ -110,7 +110,7 @@
             <li>Use <span class="bold code_info">class="button"</span> for the standard radius on buttons</li>
             <li>Use <span class="bold code_info">class="icon"</span> for the standard radius on icons</li>
           </ul>
-          </p>
+
         </div>
         <div class="dont">
           <h3>Don'ts</h3>
@@ -119,7 +119,6 @@
             <li>Don`t use a radius that isn`t an increment of .25em.</li>
             <li>Don`t use a different radius on components which have a set radius. </li>
           </ul>
-          </p>
         </div>
 
       </article>
@@ -137,7 +136,7 @@
         <h2>03. Typography</h2>
       </header>
 
-      <div class="typography__content">
+      <div class="typography__content example">
         <article class="new-example">
           <header class="new-example__header">
             <h3>Heading 1</h3>
@@ -257,7 +256,6 @@
             <li>You can use <span class="bold code_info">class="V-nav"</span> or <span
                 class="bold code_info">class="H-nav"</span> </li>
           </ul>
-          </p>
         </div>
         <div class="dont">
           <h3>Don'ts</h3>
@@ -266,7 +264,6 @@
             <li>Don`t move the navbar from the left side</li>
             <li>Don`t add more classes to the navbar</li>
           </ul>
-          </p>
         </div>
 
       </article>
@@ -306,10 +303,10 @@
         <div class="do">
           <h3>Do's</h3>
 
-          <p>Use <span class="bold code_info">class="button"</span> all the buttons</p>
+          <p>Use <span class="bold code_info">class="button"</span>for all the buttons</p>
           <p>Add <span class="bold code_info">class="button recommended"</span> by recommended buttons</p>
           <p>Add <span class="bold code_info">class="button minor"</span> by minor buttons</p>
-          <p>Add <span class="bold code_info">class="button distructive"</span> by minor distructive</p>
+          <p>Add <span class="bold code_info">class="button distructive"</span> by distructive buttons</p>
         </div>
         <div class="dont">
           <h3>Don'ts</h3>
@@ -388,7 +385,7 @@
       <div class="title">
         <h2>07. Forms</h2>
       </div>
-      <article class="example forms_sections">
+      <article class="example forms">
         <article class="forms_sections">
           <h3>Groups</h3>
           <!-- <label for="withCheckbox">Met checkbox</label>
@@ -415,11 +412,14 @@
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                <p>This is example text.</p>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using form groups.</p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example text"&gt;</span></p>
+                <p>Look at <span class="bold">05.Buttons</span> how you can chance the button color</p>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>This is example text.</p>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use a forms group without a <span class="bold code_info">&lt;label&gt;</span> </p>
               </div>
 
             </article>
@@ -478,11 +478,13 @@
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                <p>This is example text.</p>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using forms validations.</p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example text"&gt;</span></p>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>This is example text.</p>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use a forms validation without a <span class="bold code_info">&lt;label&gt;</span> </p>
               </div>
 
             </article>
@@ -538,11 +540,13 @@
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                <p>This is example text.</p>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using forms text field.</p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example text"&gt;</span> <span class="bold code_info">&lt;placeholder="Enter your message here"&gt;</span></p>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>This is example text.</p>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use a forms validation without a <span class="bold code_info">&lt;label&gt;</span> </p>
               </div>
 
             </article>
@@ -565,53 +569,56 @@
 
 
         <article class="forms_sections">
-          <h3>Options menu</h3>
-          <label for="select">Selection</label>
-          <select id="select">
-            <option>Option one</option>
-            <option>Option two</option>
-            <option>Option three</option>
-            <option>Option four</option>
-            <option>Option five</option>
-            <option>Option six</option>
-          </select>
-
+          <h3>Select menu</h3>
+          <div class="select_container">
+            <select class="select_box">
+              <option value="">Select an option</option>
+              <option value="first">Option one</option>
+              <option value="second">Option two</option>
+              <option value="third">Option three</option>
+              <option value="fourth">Option four</option>
+              <option value="fifth">Option five</option>
+              <option value="sixth">Option six</option>
+            </select>
+          </div>
           <div class="dodont_forms">
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                <p>This is example text.</p>
+                
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example text"&gt;</span>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>This is example text.</p>
+                <p>Never use a <span class="bold code_info">&lt;label&gt;</span> element when using forms select menu.</p>
               </div>
 
             </article>
             <pre><code>
-  &lt;label for="select"&gt;Selection&lt;/label&gt;
-  &lt;select id="select"&gt;
-    &lt;option&gt; Option one &lt;/option&gt;
-    &lt;option&gt; Option two &lt;/option&gt;
-    &lt;option&gt; Option three &lt;/option&gt;
-    &lt;option&gt; Option four &lt;/option&gt;
-    &lt;option&gt; Option five &lt;/option&gt;
-    &lt;option&gt; Option six &lt;/option&gt;
-  &lt;/select&gt;  
-
+  &lt;div class="select_container"&gt;
+    &lt;select class="select_box"&gt;
+    &lt;option value=""&gt; Select an option &lt;/option&gt;
+      &lt;option value="first"&gt; Option one &lt;/option&gt;
+      &lt;option value="second"&gt; Option two &lt;/option&gt;
+      &lt;option value="third"&gt; Option three &lt;/option&gt;
+      &lt;option value="fifth"&gt; Option four &lt;/option&gt;
+      &lt;option value="fourth"&gt; Option five &lt;/option&gt;
+      &lt;option value="sixth"&gt; Option six &lt;/option&gt;
+    &lt;/select&gt;  
+  &lt;/div&gt;
             </code></pre>
           </div>
         </article>
 
         <article class="forms_sections">
           <h3>Checkboxes</h3>
-          <ul class="checkmark">
+          <ul class="checkbox_container">
             <li>
-              <input name="checkbox" type="checkbox" id="choiceA" checked>
+              <span><input class="checkbox_box" name="checkbox" type="checkbox" id="choiceA" checked></span>
               <label for="choiceA">Choice A</label>
             </li>
             <li>
-              <input name="checkbox" type="checkbox" id="choiceB" checked>
+              <span><input class="checkbox_box" name="checkbox" type="checkbox" id="choiceB" checked></span>
               <label for="choiceB">Choice B</label>
             </li>
           </ul>
@@ -620,23 +627,27 @@
             <article class="info">
               <div class="do">
                 <h3>Do's</h3>
-                <p>This is example text.</p>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element <span class="bold">under</span> <span class="bold code_info">&lt;input&gt;</span> when using forms checkboxes.</p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;label&gt;</span> </p>
+                <p>Make sure you chance the checkbox <span class="bold code_info">id</span> and <span class="bold code_info">&lt;label&gt;</span> when there are more options</p>
+                
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
-                <p>This is example text.</p>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use a forms checkbox without a <span class="bold code_info">&lt;label&gt;</span> </p>
               </div>
 
             </article>
             <pre><code>
-  &lt;ul class="checkmark"&gt;
+  &lt;ul class="checkbox_container"&gt;
     &lt;li&gt;
-      &lt;input name="checkbox" type="checkbox" 
+      &lt;input class="checkbox_box" name="checkbox" type="checkbox" 
       id="choiceA" checked&gt;
       &lt;label for="choiceA"&gt;Choice A&lt;/label&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;input name="checkbox" type="checkbox" 
+      &lt;input class="checkbox_box" name="checkbox" type="checkbox" 
       id="choiceB" checked&gt;
       &lt;label for="choiceB"&gt;Choice B&lt;/label&gt;
     &lt;/li&gt;

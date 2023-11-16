@@ -64,6 +64,14 @@
     url(assets/Halton/Halton\ thin-italic.otf) format('opentype'); */
 }
 
+:root {
+  --primary: #947eb0;
+  --background: #272932;
+  --text: #ecf8f8;
+  --secondary: #519879;
+  --accent: #fb8b24;
+}
+
 body {
   margin: 0;
   font-family: "Halton", sans-serif;

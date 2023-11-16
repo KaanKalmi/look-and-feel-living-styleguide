@@ -65,7 +65,7 @@ textarea:focus {
     border: 3px solid #947EB0;
     outline: none;
 }
-select {
+/* select {
     display: block;
     padding: 2em;
     margin: 0;
@@ -86,7 +86,7 @@ select:focus {
     box-sizing: border-box;
     border: 3px solid #947EB0;
     outline: none;
-}
+} */
 .form_group {
     display: flex;
     position: relative;
@@ -103,48 +103,7 @@ select:focus {
     border-radius: 0 0.25em 0.25em 0;
     line-height: normal;
 }
-.checkbox {
-    position: relative;
-    display: table-cell;
-    background: #947EB0;
-    padding: 0 1em;
-    border-radius: 0 0.25em 0.25em 0;
-    align-items: center;
-    cursor: pointer;
-}
-/* .checkbox::before {
-    content: "";
-           display: block;
-           position: absolute;
-           width: 20px;
-           height: 20px;
-           background-color:#e9e9e9;
-  }
-  .checkbox:checked:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 0;
-    left: 0;
-    background-color:#1E80EF;
-  }
-  .checkbox:checked:after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: 2px;
-    left: 6px;
-  } 
-  */
+
 small {
     padding: 0 1em;
     flex-basis: 100%;
@@ -196,3 +155,184 @@ small {
 
   margin-top: 2em;
 }
+
+.forms .forms_sections:last-child {
+  border: none;
+  margin: 0;
+}
+
+/* SELECT MENU */
+
+.select_container {
+  margin-top: 1em;
+  position: relative;
+  color: #272932;
+  width: 50%;
+  
+  background-color: var(--primary);
+  border-radius: 1000px;
+}
+
+.select_box {
+  border: none;
+  appearance: none;
+  font-size: 0.7em;
+  margin: 0;
+  width: 100%;
+  padding: .7em 1em;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 1000px;
+  color: #272932;
+  background-color: var(--primary);
+  /* border: 3px solid #ecf8f8; */
+}
+
+/* ARROW */
+.select_container::after {
+  content: '';
+ position: absolute;
+ right: .5em;
+ bottom: .4em;
+ width: 0;
+ height: 0;
+ border-left: .5em solid transparent;
+ border-right: .5em solid transparent;
+ border-top: .5em solid #947EB0;
+ border-radius: 1000px;
+ clear: both;
+
+}
+
+.select_container::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+ width: 2em;
+ height: 70%;
+ background-color: #272932;
+ border: 3px solid #947EB0;
+ border-radius: 1000px;
+ clear: both;
+
+}
+
+.select_container:hover {
+  filter: brightness(120%);
+}
+
+.select_container:active {
+  filter: brightness(80%);
+}
+
+.select_box:focus {
+  outline: none;
+}
+
+/* CHECKBOX */
+
+/* .checkbox_container {
+  /* margin-top: 1em; 
+} */
+
+.checkbox_container li{
+  margin-top: 1em;
+  display: flex;
+  justify-items: center;
+  gap: 2em;
+  background-color: #947EB0;
+  color: #272932;
+  text-transform: uppercase;
+  padding: .2em;
+  height: 2em;
+  padding-left: 3em;
+  border-radius: .25em;
+  width: 50%;
+  position: relative;
+
+}
+
+.checkbox_container li::before{
+  content: '';
+  background-color: #272932;
+  border: 3px solid #947EB0;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2em;
+  width: 50px;
+  border-radius: .25em;
+}
+
+.checkbox_container li label{
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+ .checkbox_container li span {
+  width: 50px;
+  height: 50px;
+  transform: scale(1.5);
+  position: absolute;
+  top: 1em;
+  left: 1em;
+
+} 
+
+.checkbox_box { 
+  width: 100%;
+  height: 100%;
+}
+/* 
+.checkbox_container li em{
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  cursor: pointer;
+  background-color: #ecf8f8;
+  border: 1px solid #ecf8f8;
+  border-radius: .25em;
+}
+
+.checkbox_container li em::after{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  left: .35em;
+  top: .25em;
+  border: solid #272932;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  color: #272932;
+  opacity: 0;
+}
+
+.checkbox_container li em::before{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -1px;
+  top: -1px;
+  background-color: #519879;
+  color: #272932;
+  border-radius: .25em;
+  opacity: 0;
+}
+
+input:checked ~  .checkbox_container li em::after {
+  opacity: 1;
+}
+
+input:checked ~  .checkbox_container li em::before {
+  opacity: 1;
+} */
