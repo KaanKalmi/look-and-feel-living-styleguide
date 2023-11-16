@@ -7,8 +7,6 @@
     background-color: #ecf8f8;
     color: #272932;
     border-radius: .25em;
-    border: .25em solid;
-    border-color: #947eb0;
     font-size: .75em;
     margin-bottom: .5em;
     margin-left: 4em;
@@ -24,13 +22,11 @@
     background-color: #ecf8f8;
     color: #272932;
     border-radius: 2.5em;
-    border: .25em solid;
-    border-color: #947eb0;
     font-size: .75em;
     margin-bottom: .5em;
     margin-left: 2.5em;
     margin-right: 2.5em;
-    padding-top: .25em;
+    padding-top: .5em;
 }
 
 .example_icon {
@@ -42,8 +38,6 @@
     background-color: #ecf8f8;
     color: #272932;
     border-radius: 3.5em;
-    border: .25em solid;
-    border-color: #947eb0;
     font-size: .75em;
     margin-bottom: .5em;
     padding-top: .75em;
