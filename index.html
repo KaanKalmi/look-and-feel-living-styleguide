@@ -105,11 +105,9 @@
           <h3>Do's</h3>
           <p>
           <ul>
-            <li>Use <span class="bold code_info">class="example"</span> for the standard radius on articles</li>
-            <li>Use <span class="bold code_info">class="button"</span> for the standard radius on buttons</li>
-            <li>Use <span class="bold code_info">class="icon"</span> for the standard radius on icons</li>
+            <li>Use .25em radius on articles.</li>
+            <li>Use 2.5em radius on buttons.</li>
           </ul>
-          </p>
         </div>
         <div class="dont">
           <h3>Don'ts</h3>
@@ -118,7 +116,6 @@
             <li>Don`t use a radius that isn`t an increment of .25em.</li>
             <li>Don`t use a different radius on components which have a set radius. </li>
           </ul>
-          </p>
         </div>
 
       </article>
@@ -126,8 +123,6 @@
   &lt;button type="button" class="button"&gt;  Button &lt;/button&gt;
   
   &lt;article class="example"&gt; &lt;/article&gt;
-
-  &lt;img class="icon"&gt; &lt;/img&gt;
   </code></pre>
     </section>
 
@@ -401,11 +396,13 @@
           <input id="validState" type="text" placeholder="Example text">
           <p>Save changes</p>
         </div>
+
         <label for="invalidState">Invalid</label>
         <div class="form_validation invalid">
           <input id="invalidState" type="text" placeholder="Example text">
           <p>Save changes</p>
         </div>
+
         <div class="dodont_forms">
           <article class="info">
             <div class="do">
@@ -419,8 +416,42 @@
     
           </article>
           <pre><code>
-              
-              
+  /* STANDARD */  
+
+  &lt;label for="defaultState"&gt;Standard&lt;/label&gt;
+  &lt;input class="fs-field-group__input" id="defaultState" 
+  type="text" placeholder="Example Text"&gt;
+
+
+  /* REQUIRED */   
+
+  &lt;label for="requiredState"&gt;
+    Required&lt;span class="req"&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input class="form-group_input" id="requiredState"
+    type="text" placeholder="Example text" required&gt;
+  &lt;p&gt;&lt;span class="req"&gt;*&lt;/span&gt; - Required field&lt;/p&gt;
+
+
+  /* VALID */  
+
+  &lt;label for="validState"&gt; Valid &lt;/label&gt;
+  &lt;div class="form_validation valid"&gt;
+    &lt;input id="validState" type="text"
+     placeholder="Example text"&gt;
+    &lt;p&gt;Save changes&lt;/p&gt;
+  &lt;/div&gt;
+
+
+  /* INVALID */  
+
+  &lt;label for="invalidState"&gt;Invalid&lt;/label&gt;
+  &lt;div class="form_validation invalid"&gt;
+    &lt;input id="invalidState" type="text" 
+    placeholder="Example text"&gt;
+    &lt;p&gt;Save changes&lt;/p&lt;
+  &lt;/div&gt;
+
             </code></pre>
           </div>
       </article>
@@ -445,8 +476,17 @@
     
           </article>
           <pre><code>
-              
-              
+  /* TEXT INPUT */   
+
+  &lt;label for="textInput"&gt;Text input&lt;/label&gt;
+  &lt;input class="fs-field-group__input" id="textInput" 
+  type="text" placeholder="Example Text"&gt; 
+  
+  /* TEXT FIELD */ 
+
+  &lt;label for="textField"&gt;Text field&lt;/label&gt;
+  &lt;textarea id="textField" rows="8" cols="48" 
+  placeholder="Enter your message here"&gt;&lt;/textarea&gt;
             </code></pre>
           </div>
       </article>
@@ -478,8 +518,16 @@
     
           </article>
           <pre><code>
-              
-              
+  &lt;label for="select"&gt;Selection&lt;/label&gt;
+  &lt;select id="select"&gt;
+    &lt;option&gt; Option one &lt;/option&gt;
+    &lt;option&gt; Option two &lt;/option&gt;
+    &lt;option&gt; Option three &lt;/option&gt;
+    &lt;option&gt; Option four &lt;/option&gt;
+    &lt;option&gt; Option five &lt;/option&gt;
+    &lt;option&gt; Option six &lt;/option&gt;
+  &lt;/select&gt;  
+
             </code></pre>
           </div>
       </article>
@@ -510,7 +558,18 @@
     
           </article>
           <pre><code>
-              
+  &lt;ul class="checkmark"&gt;
+    &lt;li&gt;
+      &lt;input name="checkbox" type="checkbox" 
+      id="choiceA" checked&gt;
+      &lt;label for="choiceA"&gt;Choice A&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input name="checkbox" type="checkbox" 
+      id="choiceB" checked&gt;
+      &lt;label for="choiceB"&gt;Choice B&lt;/label&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
               
             </code></pre>
           </div>
