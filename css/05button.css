@@ -1,4 +1,4 @@
-.button-topic {
+/* .button-topic {
     grid-template-areas:
       "a a"
       "b b
@@ -8,24 +8,38 @@
   
   .button .title-topic {
     grid-area: a;
-  }
+  } */
   
   .button {
-    margin: 0 0.5em;
+    margin: 1em 0.5em;
     padding: 0.75em 2em;
     font-size: 0.65em;
     text-transform: uppercase;
-    border-radius: 1000px;
+    border-radius: 40px;
     border-style: none;
     color: #272932;
     background-color: #947eb0;
     cursor: pointer;
     grid-area: b;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    filter: brightness(120%);
+  }
+
+  .button:active{
+    filter: brightness(80%);
   }
   
   .button:disabled {
     cursor: not-allowed;
     opacity: 50%;
+  }
+
+  .button:disabled:hover {
+    filter: none;
   }
   
   .destructive {
@@ -44,4 +58,9 @@
   
   .minor:hover {
     text-decoration: underline;
+  }
+
+  .buttons p:first-child {
+    margin: 0;
+    padding: 0;
   }

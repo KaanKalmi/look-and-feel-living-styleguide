@@ -1,0 +1,53 @@
+.example_article {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 8em;
+    width: 8em;
+    background-color: #ecf8f8;
+    color: #272932;
+    border-radius: .25em;
+    font-size: .75em;
+    margin-bottom: .5em;
+    margin-left: 4em;
+    padding-top: .5em;
+    text-transform: uppercase;
+}
+
+.example_button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 2em;
+    width: 9.25em;
+    background-color: #ecf8f8;
+    color: #272932;
+    border-radius: 2.5em;
+    font-size: .75em;
+    margin-bottom: .5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding-top: .5em;
+    text-transform: uppercase;
+}
+
+.example_icon {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 3em;
+    width: 3em;
+    background-color: #ecf8f8;
+    color: #272932;
+    border-radius: 3.5em;
+    font-size: .75em;
+    margin-bottom: .5em;
+    padding-top: 1em;
+    text-transform: uppercase;
+}
+
+q {
+    display: block;
+    quotes: none;
+    max-width: 95ch;
+}

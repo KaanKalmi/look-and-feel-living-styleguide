@@ -1,5 +1,5 @@
-@import url(01style.css);
-@import url(02color.css);
+@import url(01color.css);
+@import url(02radius.css);
 @import url(03typography.css);
 @import url(04navigation.css);
 @import url(05button.css);
@@ -8,60 +8,41 @@
 
 /*Algmene css*/
 @font-face {
-  font-family: "Halton";
-  src: url(assets/Halton/Halton\ regular.otf);
+  font-family: "Halton-regular";
+  src: url(assets/Halton/Halton\ regular.otf) format("opentype");
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ regular-italic.otf );
+  font-family: "Halton-regular-italic";
+  src: url(/assets/Halton/Halton\ regular-italic.otf) format("opentype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ bold.otf);
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Halton-bold";
   src: url(/assets/Halton/Halton\ bold.otf) format("opentype");
-  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ bold-italic.otf);
+  font-family: "Halton-bold-italic";
+  src: url(/assets/Halton/Halton\ bold-italic.otf) format("opentype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ light.otf);
-  font-weight: lighter;
+  font-family: "Halton-light";
+  src: url(/assets/Halton/Halton\ light.otf) format("opentype");
+  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(assets/Halton/Halton\ light-italic.otf);
-  font-weight: lighter;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ thin.otf);
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ thin-italic.otf);
+  font-family: "Halton-light-italic";
+  src: url(assets/Halton/Halton\ light-italic.otf) format("opentype");
   font-weight: 100;
   font-style: italic;
 }
@@ -73,8 +54,8 @@
   padding: 0;
   box-sizing: border-box;
 
-  src: url(assets/Halton/Halton\ regular.otf) format("opentype");
   /* url(assets/Halton/Halton\ regular-italic.otf) format('opentype'),
+    src: url(assets/Halton/Halton\ regular.otf) format("opentype");
     url(assets/Halton/Halton\ bold.otf) format('opentype'),
     url(assets/Halton/Halton\ bold-italic.otf) format('opentype'),
     url(assets/Halton/Halton\ light.otf) format('opentype'),
@@ -93,7 +74,7 @@ body {
   color: #ecf8f8;
 }
 
-header {
+header.body__header {
   text-align: center;
   font-size: 1.8em;
   font-weight: 600;
@@ -112,7 +93,7 @@ h1 {
 
 h2 {
   align-items: center;
-  margin: 0 0 1em 0;
+  margin: 1.5em 0 1em 0;
   position: relative;
   text-transform: uppercase;
   font-size: 1.25em;
@@ -127,12 +108,126 @@ h2::after {
   background: #ecf8f8;
 }
 
+h3 {
+  margin-top: 1em;
+}
+
+h3:first-child {
+  margin: 0;
+  padding: 0;
+}
+
 h4 {
   text-transform: uppercase;
 }
 
 p {
-  margin: 1em 0 0.5em 0;
   font-weight: 100;
   font-family: "halton", sans-serif;
+}
+
+/* LAY-OUT */
+.title {
+  grid-area: titel;
+  width: 100%;
+}
+
+.example {
+  grid-area: voorbeeld;
+  margin-bottom: 2em;
+}
+
+section .info {
+  grid-area: info;
+  margin: 0 0.5em;
+}
+
+section pre {
+  grid-area: code;
+  position: relative;
+
+  margin: 0 0.5em;
+  background-color: #ecf8f8;
+  border-radius: 0.25em;
+
+  /* Cadeautje van Luuk */
+  overflow: auto;
+}
+
+pre::before {
+  content: "HTML";
+  font-size: 0.8em;
+  color: #272932;
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+}
+
+section code {
+  margin: 0;
+  padding: 0;
+  color: #272932;
+  position: relative;
+  width: 100%;
+  white-space: pre;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "titel titel"
+    "voorbeeld voorbeeld"
+    "info code";
+}
+
+/* Do's Don'ts */
+
+.info .do {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  background-color: #519879;
+  color: #272932;
+}
+
+.info p {
+  margin-bottom: 1em;
+}
+
+.info ul {
+  margin-bottom: 1em;
+}
+
+.info .do h3 {
+  text-transform: uppercase;
+}
+
+.info .dont {
+  padding: 0.5em;
+  border-radius: 0.25em;
+  background-color: #fb8b24;
+  color: #272932;
+}
+
+.info .dont h3 {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.do .code_info {
+  background-color: #519879;
+  filter: brightness(120%);
+  padding: 0 0.2em;
+  border-radius: 0.25em;
+}
+
+.dont .code_info {
+  background-color: #fb8b24;
+  filter: brightness(120%);
+  padding: 0 0.2em;
+  border-radius: 0.25em;
 }

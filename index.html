@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CrossmarX living styleguide</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/01color.css" />
   </head>
 
-  <body>
-    <header>
-      <h1>Styleguide</h1>
-    </header>
-    <main>
-      <section class="grid-container">
-        <div class="title">
-          <h2>01. Style</h2>
-        </div>
-        <article class="voorbeeld">Modern, Minimalistic</article>
-        <article class="info"></article>
-        <code></code>
-      </section>
-      <section class="grid-container">
-        <div class="title">
-          <h2>02. Color</h2>
-        </div>
-        <!--<article class="#">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossmarX living styleguide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- AFBLIJVEN XX Luuk -->
+  <header class="body__header">
+    <h1>Styleguide</h1>
+  </header>
+  <main>
+
+    <section class="grid-container">
+      <div class="title">
+        <h2>01. Color</h2>
+      </div>
+      <!--<article class="#">
         <div class="box background">
           <div class="black">Background <br />color:</div>
           <div class="zwart">#272932</div>
@@ -77,200 +80,606 @@
           <div class="orange">Accent: <br />#FB8B24</div>
         </div>
       </article>-->
-      </section>
-
-      <section class="grid-container">
-        <div class="title">
-          <h2>03. Typography</h2>
+      <article class="info">
+        <div class="do">
+          <h3>Do's</h3>
+          <p>This is example text.</p>
         </div>
-        <article class="voorbeeld">
-          <h3>Heading 1</h3>
-          <ul>
-            <li>
-              <h3>Font-family:</h3>
-              <p>font-family: 'halton-bold'</p>
-            </li>
-            <li>
-              <h3>Font-size:</h3>
-              <p>font-size: 2em</p>
-            </li>
-          </ul>
-          <span class="h1">
-            THEY DANCE ACROSS THE DASHBOARD, TELLING TALES OF THE DAY'S
-            ADVENTURES.
-          </span>
+        <div class="dont">
+          <h3>Don'ts</h3>
+          <p>This is example text.</p>
+        </div>
 
-          <h4>Heading 2</h4>
-          <ul>
-            <li>
-              <h4>Font-family:</h4>
-              <p>font-family: 'halton'</p>
-            </li>
-            <li>
-              <h4>Font-size:</h4>
-              <p>font-size: 1em</p>
-            </li>
-          </ul>
-          <span class="h2">
-            They dance across the dashboard, telling tales of the day's
-            adventures.
-          </span>
+      </article>
+      <pre class="color"><code>
+       <section>
+        <article>
+          <div class="black">Background <br> color: <br>#272932</div>
         </article>
-        <article class="info"></article>
-        <code></code>
-      </section>
-
-      <section class="grid-container">
-        <div class="title">
-          <h2>04. Navigation</h2>
-        </div>
-        <article class="#"></article>
-      </section>
-
-      <section class="grid-container">
-        <div class="title">
-          <h2>05. Buttons</h2>
-        </div>
-        <article class="buttons">
-          <p>Opties</p>
-          <button type="button" class="button recommended">Recommended</button>
-          <button type="button" class="button">Button</button>
-          <button type="button" class="button minor">Minor</button>
-          <button type="button" class="button destructive">Destructive</button>
-          <p>Uitgeschakeld</p>
-          <button type="button" class="button recommended" disabled>
-            Recommended
-          </button>
-          <button type="button" class="button" disabled>button</button>
-          <button type="button" class="button minor" disabled>Minor</button>
-          <button type="button" class="button destructive" disabled>
-            Destructive
-          </button>
+        <article>
+          <div class="purple">Primary <br> color: <br>#947EBO</div>
+          
         </article>
-      </section>
+          <article>
+            <div class="green">Secondary <br> color: <br>#519879</div>
+          </article>
 
-      <section class="grid-container">
-        <div class="title">
-          <h2>06. Graphs and Tables</h2>
+          <article>
+            <div class="white">Text <br> color: <br>#ecf8f8</div>
+          </article>
+
+          <article>
+            <div class="juice">Accent <br> color: <br>#FB8B24</div>
+          </article>
+
+          <article><div class="line"></div></article>
+       </section>
+       
+        
+      </code></pre>
+    </section>
+
+    <section class="grid-container">
+      <div class="title">
+        <h2>02. radius</h2>
+      </div>
+      <article class="example">
+        <div class="example_article"> Example article </div>
+        <div class="example_button"> Example button</div>
+        <div class="example_icon"> Icon</div>
+        <q>Our radius system follows a rule where we have increments of .25em. This means that depending on the
+          component we round the edges by using multiplications of .25em.</q>
+      </article>
+
+      <article class="info">
+        <div class="do">
+          <h3>Do's</h3>
+          <p>
+          <ul>
+            <li>Use <span class="bold code_info">class="example"</span> for the standard radius on articles</li>
+            <li>Use <span class="bold code_info">class="button"</span> for the standard radius on buttons</li>
+            <li>Use <span class="bold code_info">class="icon"</span> for the standard radius on icons</li>
+          </ul>
+          </p>
         </div>
-        <article class="topic"></article>
-      </section>
-      <section class="grid-container">
-        <div class="title"><h2>07. Forms</h2></div>
-        <h3>Groepen</h3>
-        <!-- <label for="withCheckbox">Met checkbox</label>
-      <div class="form_group">
-        <input class="form-group_input" id="withCheckbox" type="text" placeholder="Voorbeeld tekst" autofocus/>
-        <div class="form-group_attachment checkbox">
-          <input type="checkbox" id="markAsExact"/>
-          <span class="checkmark"></span>
+        <div class="dont">
+          <h3>Don'ts</h3>
+          <p>
+          <ul>
+            <li>Don`t use a radius that isn`t an increment of .25em.</li>
+            <li>Don`t use a different radius on components which have a set radius. </li>
+          </ul>
+          </p>
         </div>
-      </div> -->
-        <label for="withButton">Met button</label>
-        <div class="form_group">
-          <input
-            class="form-group_input"
-            id="withButton"
-            type="text"
-            placeholder="Voorbeeld tekst"
-          />
-          <div class="form-group_attachment">
-            <button type="button" class="button recommended">zenden</button>
+
+      </article>
+      <pre><code>
+  &lt;button type="button" class="button"&gt;  Button &lt;/button&gt;
+  
+  &lt;article class="example"&gt; &lt;/article&gt;
+
+  &lt;img class="icon"&gt; &lt;/img&gt;
+  </code></pre>
+    </section>
+
+    <section class="grid-container">
+      <header class="title">
+        <h2>03. Typography</h2>
+      </header>
+
+      <div class="typography__content">
+        <article class="new-example">
+          <header class="new-example__header">
+            <h3>Heading 1</h3>
+          </header>
+
+          <div class="new-example__content">
+
+            <section>
+              <h4>Code example</h4>
+
+              <div>
+
+                <article>
+                  <h5>Font-family</h5>
+                  <p>'halton'</p>
+                </article>
+
+                <article>
+                  <h5>Font-size</h5>
+                  <p>2em</p>
+                </article>
+
+              </div>
+            </section>
+
+            <section>
+              <h4>Visual example</h4>
+
+              <span class="h1">
+                THEY DANCE ACROSS THE DASHBOARD, TELLING TALES OF THE DAY'S
+                ADVENTURES.
+              </span>
+            </section>
+
+
           </div>
-        </div>
-        <label for="withButton">Met hulptekst</label>
-        <div class="form_group">
-          <input
-            class="form-group_input"
-            id="withButton"
-            type="text"
-            placeholder="Voorbeeld tekst"
-          />
-          <small class="form-group_help"
-            >Dit is een voorbeeld van hoe hulptekst onder een tekstvlak eruit
-            kan zien.</small
-          >
-        </div>
-        <h3>Validatie</h3>
-        <label for="withButton">Standaard</label>
-        <input
-          class="fs-field-group__input"
-          id="withHelpText"
-          type="text"
-          placeholder="Example Text"
-          aria-describedby="helpText"
-        />
+        </article>
 
-        <label for="withButton">Vereist<span class="req">*</span></label>
-        <input
-          class="form-group_input"
-          id="withButton"
-          type="text"
-          placeholder="Voorbeeld tekst"
-          required
-        />
-        <p><span class="req">*</span> - Required field</p>
+        <article class="new-example">
+          <header class="new-example__header">
+            <h3>Heading 2</h3>
+          </header>
 
-        <label for="withButton">Geldig</label>
-        <div class="form_validation geldig">
-          <input
-            id="defaultState"
-            type="text"
-            placeholder="Voorbeeld tekst"
-            aria-describedby="validMessage"
-          />
-          <p>Sla de wijzigingen hieronder op</p>
-        </div>
-        <label for="withButton">Ongeldig</label>
-        <div class="form_validation ongeldig">
-          <input
-            id="defaultState"
-            type="text"
-            placeholder="Voorbeeld tekst"
-            aria-describedby="validMessage"
-          />
-          <p>Sla de wijzigingen hieronder op</p>
+          <div class="new-example__content">
+
+            <section>
+              <h4>Code example</h4>
+
+              <div>
+
+                <article>
+                  <h5>Font-family</h5>
+                  <p>'halton'</p>
+                </article>
+
+                <article>
+                  <h5>Font-size</h5>
+                  <p>1.5em</p>
+                </article>
+
+              </div>
+            </section>
+
+            <section>
+              <h4>Visual example</h4>
+
+              <span class="h2">
+                They dance across the dashboard, telling tales of the day's
+                adventures.
+              </span>
+            </section>
+
+
+          </div>
+        </article>
+      </div>
+
+      <article class="info">
+
+        <div class="do">
+          <h3>Do's</h3>
+          <p>This is example text.</p>
         </div>
 
-        <h3>Tekst veld</h3>
-        <label for="withButton">Tekst input</label>
-        <input
-          class="fs-field-group__input"
-          id="withHelpText"
-          type="text"
-          placeholder="Example Text"
-          aria-describedby="helpText"
-        />
-        <label for="withButton">Tekst veld</label>
-        <textarea
-          id="textarea"
-          rows="8"
-          cols="48"
-          placeholder="Enter your message here"
-        ></textarea>
-        <h3>Optie menu</h3>
-        <label for="withButton">Selectie</label>
-        <select id="select">
-          <option>Optie een</option>
-          <option>Optie twee</option>
-          <option>Optie drie</option>
-          <option>Optie vier</option>
-          <option>Optie vijf</option>
-          <option>Optie zes</option>
-        </select>
+        <div class="dont">
+          <h3>Don'ts</h3>
+          <p>This is example text.</p>
+        </div>
 
-        <h3>Checkboxen</h3>
-        <ul class="checkmark">
-          <li>
-            <input name="checkbox" type="checkbox" id="choiceA" checked />
-            <label for="choiceA">Keuze A</label>
-          </li>
-          <li>
-            <input name="checkbox" type="checkbox" id="choiceA" checked />
-            <label for="choiceA">Keuze B</label>
-          </li>
-        </ul>
-      </section>
-    </main>
-  </body>
+      </article>
+
+      <pre><code>
+      &lt;h1&gt; &lt;h1&gt;
+      &lt;h2&gt; &lt;h2&gt;
+      &lt;p&gt; &lt;p&gt;
+      </code></pre>
+
+    </section>
+
+    <section class="grid-container">
+      <div class="title">
+        <h2>04. Navigation</h2>
+      </div>
+      <article class="example">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </article>
+      <article class="info">
+        <div class="do">
+          <h3>Do's</h3>
+          <p>
+          <ul>
+            <li>You can use <span class="bold code_info">class="V-nav"</span> or <span
+                class="bold code_info">class="H-nav"</span> </li>
+          </ul>
+          </p>
+        </div>
+        <div class="dont">
+          <h3>Don'ts</h3>
+          <p>
+          <ul>
+            <li>Don`t move the navbar from the left side</li>
+            <li>Don`t add more classes to the navbar</li>
+          </ul>
+          </p>
+        </div>
+
+      </article>
+      <pre> <code>
+      &lt;nav class="H-nav"&gt;
+        this is a horizontal navbar
+      &lt;/nav&gt;
+
+      &lt;nav class="V-nav"&gt;
+        this is a vertical navbar
+      &lt;/nav&gt;
+           
+        </code></pre>
+    </section>
+
+    <section class="grid-container">
+      <div class="title">
+        <h2>05. Buttons</h2>
+      </div>
+      <article class="buttons example">
+        <p>Options</p>
+        <button type="button" class="button recommended">Recommended</button>
+        <button type="button" class="button">Button</button>
+        <button type="button" class="button minor">Minor</button>
+        <button type="button" class="button destructive">Destructive</button>
+        <p>Disabled</p>
+        <button type="button" class="button recommended" disabled>
+          Recommended
+        </button>
+        <button type="button" class="button" disabled>button</button>
+        <button type="button" class="button minor" disabled>Minor</button>
+        <button type="button" class="button destructive" disabled>
+          Destructive
+        </button>
+      </article>
+      <article class="info">
+        <div class="do">
+          <h3>Do's</h3>
+
+          <p>Use <span class="bold code_info">class="button"</span> all the buttons</p>
+          <p>Add <span class="bold code_info">class="button recommended"</span> by recommended buttons</p>
+          <p>Add <span class="bold code_info">class="button minor"</span> by minor buttons</p>
+          <p>Add <span class="bold code_info">class="button distructive"</span> by minor distructive</p>
+        </div>
+        <div class="dont">
+          <h3>Don'ts</h3>
+          <ul>
+            <li>Don't create/add other classes!!</li>
+            <li>Do not create different buttons than those shown in the example.</li>
+          </ul>
+        </div>
+
+      </article>
+      <pre><code>
+  /* OPTIONS */
+
+  &lt;button type="button" class="button recommended"&gt;
+    Recommended
+  &lt;/button&gt;
+
+  &lt;button type="button" class="button"&gt;  
+    Button 
+  &lt;/button&gt;
+
+  &lt;button type="button" class="button minor"&gt;  
+    Minor 
+  &lt;/button&gt;
+
+  &lt;button type="button" class="button destructive"&gt;  
+    Distrucitve 
+  &lt;/button&gt;
+
+
+  /* DISABLED */
+  
+  &lt;button type="button" class="button recommended"&gt;
+    Recommended
+  &lt;/button&gt;
+
+  &lt;button type="button" class="button"&gt;  
+    Button 
+  &lt;/button&gt;
+
+  &lt;button type="button" class="button minor"&gt;  
+    Minor 
+  &lt;/button&gt;
+
+  &lt;button type="button" class="button destructive"&gt;  
+    Distrucitve 
+  &lt;/button&gt;
+          
+        </code></pre>
+    </section>
+
+    <section class="grid-container">
+      <div class="title">
+        <h2>06. Graphs and Tables</h2>
+      </div>
+      <article class="topic example"></article>
+
+      <article class="info">
+        <div class="do">
+          <h3>Do's</h3>
+          <p>This is example text.</p>
+        </div>
+        <div class="dont">
+          <h3>Don'ts</h3>
+          <p>This is example text.</p>
+        </div>
+
+      </article>
+      <pre><code>
+          
+          
+        </code></pre>
+    </section>
+
+    <section class="grid-container">
+      <div class="title">
+        <h2>07. Forms</h2>
+      </div>
+      <article class="example forms_sections">
+        <article class="forms_sections">
+          <h3>Groups</h3>
+          <!-- <label for="withCheckbox">Met checkbox</label>
+          <div class="form_group">
+            <input class="form-group_input" id="withCheckbox" type="text" placeholder="Voorbeeld tekst" autofocus/>
+            <div class="form-group_attachment checkbox">
+              <input type="checkbox" id="markAsExact"/>
+              <span class="checkmark"></span>
+            </div>
+          </div> -->
+          <label for="withButton">With a button</label>
+          <div class="form_group">
+            <input class="form-group_input" id="withButton" type="text" placeholder="Example text">
+            <div class="form-group_attachment">
+              <button type="button" class="button recommended">Send</button>
+            </div>
+          </div>
+          <label for="withHelpText">With help text</label>
+          <div class="form_group">
+            <input class="form-group_input" id="withHelpText" type="text" placeholder="Example text">
+            <small class="form-group_help">This is example text so you can see how it looks.</small>
+          </div>
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
+  /* WITH A BUTTON */
+
+  &lt;label for="withButton"&gt; With a button &lt;label&gt;
+  &lt;div class="form_group"&gt;
+    &lt;input class="form-group_input" id="withButton" 
+    type="text" placeholder="Example text"&gt;
+    &lt;div class="form-group_attachment"&gt;
+      &lt;button type="button" class="button recommended"&gt;  
+        Send
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  
+  /* WITH HELP TEKST */
+
+  &lt;label for="withHelpText"&gt;With help text&lt;/label&gt;
+  &lt;div class="form_group"&gt;
+    &lt;input class="form-group_input" id="withHelpText" 
+    type="text" placeholder="Example text"&gt;
+    &lt;small class="form-group_help"&gt;
+      This is example text so you can see how it looks. 
+    &lt;/small&gt;
+  &lt;/div&gt;
+
+        </code></pre>
+          </div>
+        </article>
+
+        <article class="forms_sections">
+          <h3>Validation</h3>
+          <label for="defaultState">Standard</label>
+          <input class="fs-field-group__input" id="defaultState" type="text" placeholder="Example Text">
+
+          <label for="requiredState">Required<span class="req">*</span></label>
+          <input class="form-group_input" id="requiredState" type="text" placeholder="Example text" required>
+          <p><span class="req">*</span> - Required field</p>
+
+          <label for="validState">Valid</label>
+          <div class="form_validation valid">
+            <input id="validState" type="text" placeholder="Example text">
+            <p>Save changes</p>
+          </div>
+
+          <label for="invalidState">Invalid</label>
+          <div class="form_validation invalid">
+            <input id="invalidState" type="text" placeholder="Example text">
+            <p>Save changes</p>
+          </div>
+
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
+  /* STANDARD */  
+
+  &lt;label for="defaultState"&gt;Standard&lt;/label&gt;
+  &lt;input class="fs-field-group__input" id="defaultState" 
+  type="text" placeholder="Example Text"&gt;
+
+
+  /* REQUIRED */   
+
+  &lt;label for="requiredState"&gt;
+    Required&lt;span class="req"&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input class="form-group_input" id="requiredState"
+    type="text" placeholder="Example text" required&gt;
+  &lt;p&gt;&lt;span class="req"&gt;*&lt;/span&gt; - Required field&lt;/p&gt;
+
+
+  /* VALID */  
+
+  &lt;label for="validState"&gt; Valid &lt;/label&gt;
+  &lt;div class="form_validation valid"&gt;
+    &lt;input id="validState" type="text"
+     placeholder="Example text"&gt;
+    &lt;p&gt;Save changes&lt;/p&gt;
+  &lt;/div&gt;
+
+
+  /* INVALID */  
+
+  &lt;label for="invalidState"&gt;Invalid&lt;/label&gt;
+  &lt;div class="form_validation invalid"&gt;
+    &lt;input id="invalidState" type="text" 
+    placeholder="Example text"&gt;
+    &lt;p&gt;Save changes&lt;/p&lt;
+  &lt;/div&gt;
+
+            </code></pre>
+          </div>
+        </article>
+
+        <article class="forms_sections">
+          <h3>Text field</h3>
+          <label for="textInput">Text input</label>
+          <input class="fs-field-group__input" id="textInput" type="text" placeholder="Example Text">
+          <label for="textField">Text field</label>
+          <textarea id="textField" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
+  /* TEXT INPUT */   
+
+  &lt;label for="textInput"&gt;Text input&lt;/label&gt;
+  &lt;input class="fs-field-group__input" id="textInput" 
+  type="text" placeholder="Example Text"&gt; 
+  
+  /* TEXT FIELD */ 
+
+  &lt;label for="textField"&gt;Text field&lt;/label&gt;
+  &lt;textarea id="textField" rows="8" cols="48" 
+  placeholder="Enter your message here"&gt;&lt;/textarea&gt;
+            </code></pre>
+          </div>
+        </article>
+
+
+
+        <article class="forms_sections">
+          <h3>Options menu</h3>
+          <label for="select">Selection</label>
+          <select id="select">
+            <option>Option one</option>
+            <option>Option two</option>
+            <option>Option three</option>
+            <option>Option four</option>
+            <option>Option five</option>
+            <option>Option six</option>
+          </select>
+
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
+  &lt;label for="select"&gt;Selection&lt;/label&gt;
+  &lt;select id="select"&gt;
+    &lt;option&gt; Option one &lt;/option&gt;
+    &lt;option&gt; Option two &lt;/option&gt;
+    &lt;option&gt; Option three &lt;/option&gt;
+    &lt;option&gt; Option four &lt;/option&gt;
+    &lt;option&gt; Option five &lt;/option&gt;
+    &lt;option&gt; Option six &lt;/option&gt;
+  &lt;/select&gt;  
+
+            </code></pre>
+          </div>
+        </article>
+
+        <article class="forms_sections">
+          <h3>Checkboxes</h3>
+          <ul class="checkmark">
+            <li>
+              <input name="checkbox" type="checkbox" id="choiceA" checked>
+              <label for="choiceA">Choice A</label>
+            </li>
+            <li>
+              <input name="checkbox" type="checkbox" id="choiceB" checked>
+              <label for="choiceB">Choice B</label>
+            </li>
+          </ul>
+
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>This is example text.</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>This is example text.</p>
+              </div>
+
+            </article>
+            <pre><code>
+  &lt;ul class="checkmark"&gt;
+    &lt;li&gt;
+      &lt;input name="checkbox" type="checkbox" 
+      id="choiceA" checked&gt;
+      &lt;label for="choiceA"&gt;Choice A&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input name="checkbox" type="checkbox" 
+      id="choiceB" checked&gt;
+      &lt;label for="choiceB"&gt;Choice B&lt;/label&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+              
+            </code></pre>
+          </div>
+        </article>
+
+      </article>
+
+    </section>
+  </main>
+</body>
+
 </html>
