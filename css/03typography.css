@@ -114,3 +114,9 @@
 .new-example p {
     font-size: .6em;
 }
+
+.h3 {
+    font-size: .5em;
+    font-family: halton-italic;
+    grid-area: h3;
+}
