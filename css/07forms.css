@@ -158,10 +158,10 @@ small {
 .form_validation p {
     padding: 0 0.5em;
 }
-.geldig {
+.valid {
     background-color: #519879;
 }
-.ongeldig {
+.invalid {
     background-color: #FB8B24;
 }
 .forms ul {

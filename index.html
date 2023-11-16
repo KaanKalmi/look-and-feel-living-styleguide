@@ -1,47 +1,25 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrossmarX living styleguide</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<html lang="en">
 
-  <body>
-    <header>
-      <h1>Styleguide</h1>
-    </header>
-    <main>
-      <section class="grid-container">
-        <div class="title">
-          <h2>01. Style</h2>
-        </div>
-        <article class="voorbeeld">Modern, Minimalistic, Fun & Energy saving</article>
-        
-        <article class="info">
-          <div class="do">
-          <h3>Do's</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-          <div class="dont">
-          <h3>Don'ts</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-  
-        </article>
-        <pre><code>
-          
-          
-          
-        </code></pre>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossmarX living styleguide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      <section class="grid-container">
-        <div class="title">
-          <h2>02. Color</h2>
-        </div>
-        <!--<article class="#">
+<body>
+  <header>
+    <h1>Styleguide</h1>
+  </header>
+  <main>
+
+    <section class="grid-container">
+      <div class="title">
+        <h2>01. Color</h2>
+      </div>
+      <!--<article class="#">
         <div class="box background">
           <div class="black">Background <br />color:</div>
           <div class="zwart">#272932</div>
@@ -95,12 +73,12 @@
       </article>-->
       <article class="info">
         <div class="do">
-        <h3>Do's</h3>
-        <p>Dit is voorbeeld tekst.</p>
+          <h3>Do's</h3>
+          <p>This is example text.</p>
         </div>
         <div class="dont">
-        <h3>Don'ts</h3>
-        <p>Dit is voorbeeld tekst.</p>
+          <h3>Don'ts</h3>
+          <p>This is example text.</p>
         </div>
 
       </article>
@@ -108,157 +86,196 @@
         
         
       </code></pre>
-      </section>
+    </section>
 
-      <section class="grid-container">
-        <div class="title">
-          <h2>03. Typography</h2>
-        </div>
-        <article class="voorbeeld voorbeeld_typography">
-          <h3>Heading 1</h3>
-          <ul>
-            <li>
-              <h3>Font-family:</h3>
-              <p>font-family: 'halton-bold'</p>
-            </li>
-            <li>
-              <h3>Font-size:</h3>
-              <p>font-size: 2em</p>
-            </li>
-          </ul>
-          <span class="h1">
-            THEY DANCE ACROSS THE DASHBOARD, TELLING TALES OF THE DAY'S
-            ADVENTURES.
-          </span>
+    <section class="grid-container">
+      <div class="title">
+        <h2>02. radius</h2>
+      </div>
+      <article class="example">
+        Our radius system follows a rule where we have increments of .25em. This means that depending on the
+        component we round the edges by using multiplications of .25em.
+      </article>
 
-          <h4>Heading 2</h4>
-          <ul>
-            <li>
-              <h4>Font-family:</h4>
-              <p>font-family: 'halton'</p>
-            </li>
-            <li>
-              <h4>Font-size:</h4>
-              <p>font-size: 1em</p>
-            </li>
-          </ul>
-          <span class="h2">
-            They dance across the dashboard, telling tales of the day's
-            adventures.
-          </span>
-        </article>
-        <article class="info">
-          <div class="do">
+      <article class="info">
+        <div class="do">
           <h3>Do's</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-          <div class="dont">
+          <p>
+          <ul>
+            <li>Use .25em radius on articles.</li>
+            <li>Use 2.5em radius on buttons.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="dont">
           <h3>Don'ts</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
+          <p>
+          <ul>
+            <li>Don`t use a radius that is`t an increment of .25em.</li>
+            <li>Don`t use a different radius on components which have a set radius. </li>
+          </ul>
+          </p>
+        </div>
+
+      </article>
+      <pre><code>
+  &lt;button type="button" class="button"&gt;  Button &lt;/button&gt;
   
-        </article>
-        <pre><code>
+  &lt;article class="example"&gt; &lt;/article&gt;
+  </code></pre>
+    </section>
+
+    <section class="grid-container">
+      <div class="title">
+        <h2>03. Typography</h2>
+      </div>
+      <article class="example example_typography">
+        <h3>Heading 1</h3>
+        <ul>
+          <li>
+            <h3>Font-family:</h3>
+            <p>font-family: 'halton-bold'</p>
+          </li>
+          <li>
+            <h3>Font-size:</h3>
+            <p>font-size: 2em</p>
+          </li>
+        </ul>
+        <span class="h1">
+          THEY DANCE ACROSS THE DASHBOARD, TELLING TALES OF THE DAY'S
+          ADVENTURES.
+        </span>
+
+        <h4>Heading 2</h4>
+        <ul>
+          <li>
+            <h4>Font-family:</h4>
+            <p>font-family: 'halton'</p>
+          </li>
+          <li>
+            <h4>Font-size:</h4>
+            <p>font-size: 1em</p>
+          </li>
+        </ul>
+        <span class="h2">
+          They dance across the dashboard, telling tales of the day's
+          adventures.
+        </span>
+      </article>
+      <article class="info">
+        <div class="do">
+          <h3>Do's</h3>
+          <p>This is example text.</p>
+        </div>
+        <div class="dont">
+          <h3>Don'ts</h3>
+          <p>This is example text.</p>
+        </div>
+
+      </article>
+      <pre><code>
           
           
         </code></pre>
-      </section>
+    </section>
 
-      <section class="grid-container">
-        <div class="title">
-          <h2>04. Navigation</h2>
-        </div>
-        <article class="voorbeeld">
-          <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </article>
-        <article class="info">
-          <div class="do">
+    <section class="grid-container">
+      <div class="title">
+        <h2>04. Navigation</h2>
+      </div>
+      <article class="example">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </article>
+      <article class="info">
+        <div class="do">
           <h3>Do's</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-          <div class="dont">
+          <p>This is example text.</p>
+        </div>
+        <div class="dont">
           <h3>Don'ts</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-  
-        </article>
-        <pre><nav>
+          <p>This is example text.</p>
+        </div>
+
+      </article>
+      <pre><nav>
           
         </nav><code>
           
           
         </code></pre>
-      </section>
+    </section>
 
-      <section class="grid-container">
-        <div class="title">
-          <h2>05. Buttons</h2>
-        </div>
-        <article class="buttons voorbeeld">
-          <p>Opties</p>
-          <button type="button" class="button recommended">Recommended</button>
-          <button type="button" class="button">Button</button>
-          <button type="button" class="button minor">Minor</button>
-          <button type="button" class="button destructive">Destructive</button>
-          <p>Uitgeschakeld</p>
-          <button type="button" class="button recommended" disabled>
-            Recommended
-          </button>
-          <button type="button" class="button" disabled>button</button>
-          <button type="button" class="button minor" disabled>Minor</button>
-          <button type="button" class="button destructive" disabled>
-            Destructive
-          </button>
-        </article>
-        <article class="info">
-          <div class="do">
+    <section class="grid-container">
+      <div class="title">
+        <h2>05. Buttons</h2>
+      </div>
+      <article class="buttons example">
+        <p>Options</p>
+        <button type="button" class="button recommended">Recommended</button>
+        <button type="button" class="button">Button</button>
+        <button type="button" class="button minor">Minor</button>
+        <button type="button" class="button destructive">Destructive</button>
+        <p>Disabled</p>
+        <button type="button" class="button recommended" disabled>
+          Recommended
+        </button>
+        <button type="button" class="button" disabled>button</button>
+        <button type="button" class="button minor" disabled>Minor</button>
+        <button type="button" class="button destructive" disabled>
+          Destructive
+        </button>
+      </article>
+      <article class="info">
+        <div class="do">
           <h3>Do's</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-          <div class="dont">
+          <p>This is example text.</p>
+        </div>
+        <div class="dont">
           <h3>Don'ts</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-  
-        </article>
-        <pre><code>
+          <p>This is example text.</p>
+        </div>
+
+      </article>
+      <pre><code>
           
           
         </code></pre>
-      </section>
+    </section>
 
-      <section class="grid-container">
-        <div class="title">
-          <h2>06. Graphs and Tables</h2>
-        </div>
-        <article class="topic voorbeeld"></article>
+    <section class="grid-container">
+      <div class="title">
+        <h2>06. Graphs and Tables</h2>
+      </div>
+      <article class="topic example"></article>
 
-        <article class="info">
-          <div class="do">
+      <article class="info">
+        <div class="do">
           <h3>Do's</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-          <div class="dont">
+          <p>This is example text.</p>
+        </div>
+        <div class="dont">
           <h3>Don'ts</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-  
-        </article>
-        <pre><code>
+          <p>This is example text.</p>
+        </div>
+
+      </article>
+      <pre><code>
           
           
         </code></pre>
-      </section>
+    </section>
 
-      <section class="grid-container">
-        <div class="title"><h2>07. Forms</h2></div>
-        <article class="voorbeeld">
-        <h3>Groepen</h3>
+    <section class="grid-container">
+      <div class="title">
+        <h2>07. Forms</h2>
+      </div>
+      <article class="example">
+        <h3>Groups</h3>
         <!-- <label for="withCheckbox">Met checkbox</label>
       <div class="form_group">
         <input class="form-group_input" id="withCheckbox" type="text" placeholder="Voorbeeld tekst" autofocus/>
@@ -267,128 +284,85 @@
           <span class="checkmark"></span>
         </div>
       </div> -->
-        <label for="withButton">Met button</label>
+        <label for="withButton">With a button</label>
         <div class="form_group">
-          <input
-            class="form-group_input"
-            id="withButton"
-            type="text"
-            placeholder="Voorbeeld tekst"
-          />
+          <input class="form-group_input" id="withButton" type="text" placeholder="Example text" />
           <div class="form-group_attachment">
-            <button type="button" class="button recommended">zenden</button>
+            <button type="button" class="button recommended">Send</button>
           </div>
         </div>
-        <label for="withButton">Met hulptekst</label>
+        <label for="withButton">With example text.</label>
         <div class="form_group">
-          <input
-            class="form-group_input"
-            id="withButton"
-            type="text"
-            placeholder="Voorbeeld tekst"
-          />
-          <small class="form-group_help"
-            >Dit is een voorbeeld van hoe hulptekst onder een tekstvlak eruit
-            kan zien.</small
-          >
+          <input class="form-group_input" id="withButton" type="text" placeholder="Example text" />
+          <small class="form-group_help">This is example text so you can see how it looks.</small>
         </div>
-        <h3>Validatie</h3>
-        <label for="withButton">Standaard</label>
-        <input
-          class="fs-field-group__input"
-          id="withHelpText"
-          type="text"
-          placeholder="Example Text"
-          aria-describedby="helpText"
-        />
+        <h3>Validation</h3>
+        <label for="withButton">Standard</label>
+        <input class="fs-field-group__input" id="withHelpText" type="text" placeholder="Example Text"
+          aria-describedby="helpText" />
 
-        <label for="withButton">Vereist<span class="req">*</span></label>
-        <input
-          class="form-group_input"
-          id="withButton"
-          type="text"
-          placeholder="Voorbeeld tekst"
-          required
-        />
+        <label for="withButton">Required<span class="req">*</span></label>
+        <input class="form-group_input" id="withButton" type="text" placeholder="Example text" required />
         <p><span class="req">*</span> - Required field</p>
 
-        <label for="withButton">Geldig</label>
-        <div class="form_validation geldig">
-          <input
-            id="defaultState"
-            type="text"
-            placeholder="Voorbeeld tekst"
-            aria-describedby="validMessage"
-          />
-          <p>Sla de wijzigingen hieronder op</p>
+        <label for="withButton">Valid</label>
+        <div class="form_validation valid">
+          <input id="defaultState" type="text" placeholder="Example text" aria-describedby="validMessage" />
+          <p>Save changes</p>
         </div>
-        <label for="withButton">Ongeldig</label>
-        <div class="form_validation ongeldig">
-          <input
-            id="defaultState"
-            type="text"
-            placeholder="Voorbeeld tekst"
-            aria-describedby="validMessage"
-          />
-          <p>Sla de wijzigingen hieronder op</p>
+        <label for="withButton">Invalid</label>
+        <div class="form_validation invalid">
+          <input id="defaultState" type="text" placeholder="Example text" aria-describedby="validMessage" />
+          <p>Save changes</p>
         </div>
 
-        <h3>Tekst veld</h3>
-        <label for="withButton">Tekst input</label>
-        <input
-          class="fs-field-group__input"
-          id="withHelpText"
-          type="text"
-          placeholder="Example Text"
-          aria-describedby="helpText"
-        />
-        <label for="withButton">Tekst veld</label>
-        <textarea
-          id="textarea"
-          rows="8"
-          cols="48"
-          placeholder="Enter your message here"
-        ></textarea>
-        <h3>Optie menu</h3>
-        <label for="withButton">Selectie</label>
+        <h3>Text field</h3>
+        <label for="withButton">Text input</label>
+        <input class="fs-field-group__input" id="withHelpText" type="text" placeholder="Example Text"
+          aria-describedby="helpText" />
+        <label for="withButton">Text field</label>
+        <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+        <h3>Options menu</h3>
+        <label for="withButton">Selection</label>
         <select id="select">
-          <option>Optie een</option>
-          <option>Optie twee</option>
-          <option>Optie drie</option>
-          <option>Optie vier</option>
-          <option>Optie vijf</option>
-          <option>Optie zes</option>
+          <option>Option one</option>
+          <option>Option two</option>
+          <option>Option three</option>
+          <option>Option four</option>
+          <option>Option five</option>
+          <option>Option six</option>
         </select>
 
-        <h3>Checkboxen</h3>
+        <h3>Checkboxes</h3>
         <ul class="checkmark">
           <li>
             <input name="checkbox" type="checkbox" id="choiceA" checked />
-            <label for="choiceA">Keuze A</label>
+            <label for="choiceA">Choice A</label>
           </li>
           <li>
             <input name="checkbox" type="checkbox" id="choiceA" checked />
-            <label for="choiceA">Keuze B</label>
+            <label for="choiceA">Choice B</label>
           </li>
         </ul>
-        </article>
+      </article>
 
-        <article class="info">
-          <div class="do">
+      <article class="info">
+        <div class="do">
           <h3>Do's</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-          <div class="dont">
+          <p>This is example text.</p>
+        </div>
+        <div class="dont">
           <h3>Don'ts</h3>
-          <p>Dit is voorbeeld tekst.</p>
-          </div>
-  
-        </article>
-        <pre><code>
+          <p>This is example text.</p>
+        </div>
+
+      </article>
+      <pre><code>
           
           
         </code></pre>
-      </section>
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
