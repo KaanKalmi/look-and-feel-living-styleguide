@@ -8,47 +8,41 @@
 
 /*Algmene css*/
 @font-face {
-  font-family: "Halton";
-  src: url(assets/Halton/Halton\ regular.otf);
+  font-family: "Halton-regular";
+  src: url(assets/Halton/Halton\ regular.otf) format("opentype");
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ regular-italic.otf );
+  font-family: "Halton-regular-italic";
+  src: url(/assets/Halton/Halton\ regular-italic.otf) format("opentype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ bold.otf);
+  font-family: "Halton-bold";
+  src: url(/assets/Halton/Halton\ bold.otf) format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Halton-bold";
-  src: url(/assets/Halton/Halton\ bold.otf) format("opentype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ bold-italic.otf);
+  font-family: "Halton-bold-italic";
+  src: url(/assets/Halton/Halton\ bold-italic.otf) format("opentype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(/assets/Halton/Halton\ light.otf);
+  font-family: "Halton-light";
+  src: url(/assets/Halton/Halton\ light.otf) format("opentype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Halton";
-  src: url(assets/Halton/Halton\ light-italic.otf);
+  font-family: "Halton-light-italic";
+  src: url(assets/Halton/Halton\ light-italic.otf) format("opentype");
   font-weight: 100;
   font-style: italic;
 }
@@ -60,8 +54,8 @@
   padding: 0;
   box-sizing: border-box;
 
-  src: url(assets/Halton/Halton\ regular.otf) format("opentype");
   /* url(assets/Halton/Halton\ regular-italic.otf) format('opentype'),
+    src: url(assets/Halton/Halton\ regular.otf) format("opentype");
     url(assets/Halton/Halton\ bold.otf) format('opentype'),
     url(assets/Halton/Halton\ bold-italic.otf) format('opentype'),
     url(assets/Halton/Halton\ light.otf) format('opentype'),
@@ -80,7 +74,7 @@ body {
   color: #ecf8f8;
 }
 
-header {
+header.body__header {
   text-align: center;
   font-size: 1.8em;
   font-weight: 600;
@@ -155,6 +149,9 @@ section pre {
   margin: 0 .5em;
   background-color: #ecf8f8;
   border-radius: .25em;
+
+  /* Cadeautje van Luuk */
+  overflow: auto;
 }
 
 pre::before {
@@ -181,7 +178,7 @@ section code {
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "titel titel"
     "voorbeeld voorbeeld"
     "info code"
@@ -238,5 +235,3 @@ section {
   padding: 0 .2em;
   border-radius: .25em;
 }
-
-

@@ -25,7 +25,6 @@
     grid-area: h1;
 }
 
-
 .example_typography ul li:nth-child(2) {
     list-style: none;
     gap: 1em;
@@ -42,15 +41,64 @@
 }
 
 .example_typography h3 {
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 600;
     font-family: 'Halton';
     grid-area: h3;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.example_typography p {
+    font-size: .7em;
+    font-weight: 600;
+    font-family: 'Halton';
+    grid-area: h3;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 .example_typography h4 {
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 600;
     font-family: 'Halton';
     grid-area: h4;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.example_typography p {
+    font-size: .7em;
+    font-weight: 600;
+    font-family: 'Halton';
+    grid-area: h4;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.typography__content {
+    grid-column: span 2;
+}
+
+.typography__content section {
+    display: initial;
+}
+
+.new-example {}
+
+.new-example__header {}
+
+.new-example__content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.new-example__content h4 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
