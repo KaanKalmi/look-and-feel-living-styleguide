@@ -18,3 +18,20 @@ nav a:hover {
     background-color: #DDD;
     color: Black;
 }
+
+
+.nav li{
+    display: inline-block;
+    margin-left: 1.2em;
+    font-size: .5em;
+}
+.nav a{
+    list-style-type: none;
+    color: #DDD;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: #947eb0;
+}
