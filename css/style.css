@@ -248,6 +248,7 @@ section {
 @media (min-width:321px) and (max-width:768px) {
   body {
     font-size: 1.3em;
+    max-width: 75%;
   }
 
   .grid-container {
