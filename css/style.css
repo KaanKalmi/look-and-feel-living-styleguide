@@ -74,7 +74,7 @@
 
 body {
   margin: 0;
-  font-family: "Halton", sans-serif;
+  font-family: "Halton-regular", sans-serif;
   font-weight: normal;
   font-size: 1.5em;
   display: block;
@@ -131,7 +131,7 @@ h4 {
 
 p {
   font-weight: 100;
-  font-family: "halton", sans-serif;
+  font-family: "Halton-regular", sans-serif;
 }
 
 /* LAY-OUT */

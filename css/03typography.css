@@ -2,21 +2,21 @@
 .h1 {
     font-size: 1em;
     font-weight: 600;
-    font-family: 'Halton-bold';
+    font-family: 'Halton-bold', sans-serif;
     grid-area: h1;
 }
 
 .h2 {
     font-size: 1em;
     font-weight: 100;
-    font-family: "Halton";
+    font-family: "Halton", sans-serif;
     grid-area: h2;
 }
 
 
 .h3 {
     font-size: .75em;
-    font-family: halton-italic;
+    font-family: 'halton-italic', sans-serif;
     grid-area: h3;
 }
 
