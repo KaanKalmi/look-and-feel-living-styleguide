@@ -76,7 +76,7 @@ body {
   margin: 0;
   font-family: "Halton", sans-serif;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.5em;
   display: block;
   background-color: #272932;
   color: #ecf8f8;
@@ -90,11 +90,7 @@ header.body__header {
 }
 
 main {
-  margin: 0 1em 1em 1em;
-}
-
-section {
-  display: block;
+  margin: 0 10em 10em 10em;
 }
 
 h1 {
@@ -241,49 +237,4 @@ section {
   filter: brightness(120%);
   padding: 0 0.2em;
   border-radius: 0.25em;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    font-size: 1.3em;
-    /* Adjusted for tablets */
-  }
-
-  main {
-    margin: 0 5em 5em 5em;
-    /* Adjusted for tablets */
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "titel"
-      "voorbeeld"
-      "info"
-      "code";
-  }
-
-}
-
-@media (min-width: 768px) {
-  body {
-    font-size: 1.5em;
-    /* Adjusted for larger screens */
-  }
-
-  main {
-    margin: 0 10em 10em 10em;
-    /* Adjusted for larger screens */
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "titel titel"
-      "voorbeeld voorbeeld"
-      "info code";
-  }
-
 }
