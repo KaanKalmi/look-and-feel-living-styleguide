@@ -7,11 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CrossmarX living styleguide</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/01color.css">
 </head>
 
 <body>
-  <!-- AFBLIJVEN XX Luuk -->
   <header class="body__header">
     <h1>Styleguide</h1>
   </header>
@@ -54,9 +52,9 @@
           </article>
 
           <article><div class="line"></div></article>
-       </section>
+      </section>
        
-        
+      
       </code></pre>
     </section>
 
@@ -91,11 +89,26 @@
 
       </article>
       <pre><code>
-  &lt;button type="button" class="button"&gt;  Button &lt;/button&gt;
-  
-  &lt;article class="example"&gt; &lt;/article&gt;
-
-  &lt;img class="icon"&gt; &lt;/img&gt;
+        .example_article {
+          background-color: #ecf8f8;
+          color: #272932;
+          border-radius: .25em;
+          text-transform: uppercase;
+      }
+      
+      .example_button {
+          background-color: #ecf8f8;
+          color: #272932;
+          border-radius: 2.5em;
+          text-transform: uppercase;
+      }
+      
+      .example_icon {
+          background-color: #ecf8f8;
+          color: #272932;
+          border-radius: 3.5em;
+          text-transform: uppercase;
+      }
   </code></pre>
     </section>
 
@@ -236,19 +249,30 @@
 
         <div class="dont">
           <h3>Don'ts</h3>
-            <ul>
-              <li>
-                Dont use h1 for article headings
-              </li>
-            </ul>
+          <ul>
+            <li>
+              Dont use h1 for article headings
+            </li>
+          </ul>
         </div>
 
       </article>
 
       <pre><code>
-      &lt;h1&gt; text example &lt;h1&gt;
-      &lt;h2&gt; text example &lt;h2&gt;
-      &lt;p&gt; text example &lt;p&gt;
+        h1{
+          font-size: 2em;
+          font-family: halton;
+        }
+
+        h2{
+          Font-family: 'halton-regular';
+          Font-size: 1.5em;
+        }
+        
+        p {
+          font-size: .5em;
+          font-family: halton-italic;
+      }
       </code></pre>
     </section>
 
@@ -372,7 +396,7 @@
         </code></pre>
     </section>
 
-   <!-- <section class="grid-container">
+    <!-- <section class="grid-container">
       <div class="title">
         <h2>06. Graphs and Tables</h2>
       </div>
@@ -609,8 +633,8 @@
               <div class="do">
                 <h3>Do's</h3>
 
-                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
-                    text"&gt;</span>
+                You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
+                  text"&gt;</span>
               </div>
               <div class="dont">
                 <h3>Don'ts</h3>
