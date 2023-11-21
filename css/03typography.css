@@ -54,8 +54,11 @@
 
 .new-example h5 {
     font-size: .6em;
+    margin-bottom: .75em;
+    margin-top: 1.75em;
 }
 
 .new-example p {
     font-size: .6em;
+    margin-bottom: 1em;
 }
