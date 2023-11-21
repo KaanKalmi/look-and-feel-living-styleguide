@@ -158,12 +158,11 @@ section pre {
   background-color: #ecf8f8;
   border-radius: 0.25em;
 
-  /* Cadeautje van Luuk */
   overflow: auto;
 }
 
 pre::before {
-  content: "HTML";
+  content: "CSS";
   font-size: 0.8em;
   color: #272932;
   position: absolute;

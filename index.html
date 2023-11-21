@@ -268,7 +268,7 @@
           Font-family: 'halton-regular';
           Font-size: 1.5em;
         }
-        
+
         p {
           font-size: .5em;
           font-family: halton-italic;
@@ -292,8 +292,7 @@
         <div class="do">
           <h3>Do's</h3>
           <ul>
-            <li>You can use <span class="bold code_info">class="V-nav"</span> or <span
-                class="bold code_info">class="H-nav"</span> </li>
+            <li>You can use align the navbar vertically on the left side </li>
           </ul>
         </div>
         <div class="dont">
@@ -306,13 +305,26 @@
 
       </article>
       <pre> <code>
-      &lt;nav class="H-nav"&gt;
-        this is a horizontal navbar
-      &lt;/nav&gt;
+    nav {
+    overflow: hidden;
+    font-family: 'Halton';
+    font-weight: 600;
+    }
 
-      &lt;nav class="V-nav"&gt;
-        this is a vertical navbar
-      &lt;/nav&gt;
+    nav a {
+    float: left;
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 2em;
+    text-decoration: none;
+    }
+
+    nav a:hover {
+    background-color: #DDD;
+    color: Black;
+    }
            
         </code></pre>
     </section>
