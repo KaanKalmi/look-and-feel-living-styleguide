@@ -162,7 +162,7 @@ section pre {
   background-color: #ecf8f8;
   border-radius: 0.25em;
 
-  overflow: auto;
+  overflow: visible;
 }
 
 pre::before {
