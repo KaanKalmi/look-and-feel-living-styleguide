@@ -90,7 +90,7 @@ header.body__header {
 }
 
 main {
-  margin: 0 1em 1em 1em;
+  margin: 0 .8em .8em 1em;
 }
 
 section {
@@ -250,8 +250,12 @@ section {
     font-size: 1.3em;
   }
 
+  .grid-container {
+    width: 90%;
+  }
+
   main {
-    margin: 0 3em 3em 5em;
+    margin: 0 5em 5em 5em;
   }
 
   section {
