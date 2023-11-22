@@ -38,6 +38,7 @@ input {
 input::placeholder {
     color: #272932;
     opacity: 50%;
+    font-family: "Halton-regular", sans-serif;
 }
 input:focus {
     box-sizing: border-box;
@@ -59,6 +60,7 @@ textarea {
 textarea::placeholder {
     color: #272932;
     opacity: 50%;
+    font-family: "Halton-regular", sans-serif;
 }
 textarea:focus {
     box-sizing: border-box;
@@ -199,7 +201,7 @@ small {
  height: 0;
  border-left: .5em solid transparent;
  border-right: .5em solid transparent;
- border-top: .5em solid #947EB0;
+ border-top: .5em solid var(--primary);
  border-radius: 1000px;
  clear: both;
 
@@ -213,7 +215,7 @@ small {
  width: 2em;
  height: 70%;
  background-color: #272932;
- border: 3px solid #947EB0;
+ border: 3px solid var(--primary);
  border-radius: 1000px;
  clear: both;
 
@@ -242,7 +244,7 @@ small {
   display: flex;
   justify-items: center;
   gap: 2em;
-  background-color: #947EB0;
+  background-color: var(--primary);
   color: #272932;
   text-transform: uppercase;
   padding: .2em;
@@ -257,7 +259,7 @@ small {
 .checkbox_container li::before{
   content: '';
   background-color: #272932;
-  border: 3px solid #947EB0;
+  border: 3px solid var(--primary);
   text-transform: uppercase;
   position: absolute;
   left: 0;

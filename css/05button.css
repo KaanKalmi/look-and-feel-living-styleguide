@@ -17,8 +17,8 @@
     text-transform: uppercase;
     border-radius: 40px;
     border-style: none;
-    color: #272932;
-    background-color: #AD97C9;
+    color: var(--background);
+    background-color: var(--primary);
     cursor: pointer;
     grid-area: b;
 
@@ -43,16 +43,16 @@
   }
   
   .destructive {
-    background-color: #fb8b24;
+    background-color: var(--accent);
   }
   
   .recommended {
-    background-color: #519879;
+    background-color: var(--secondary);
   }
   
   .minor {
     background-color: transparent;
-    color: #519879;
+    color: var(--secondary);
   }
   
   .minor:hover {

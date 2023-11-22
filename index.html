@@ -179,57 +179,12 @@
             using multiplications of .25em.</q
           >
         </article>
+      <pre><code>
+  &lt;button type="button" class="button"&gt;  Button &lt;/button&gt;
 
-        <article class="info">
-          <div class="do">
-            <h3>Do's</h3>
-            <ul>
-              <li>
-                Use <span class="bold code_info">class="example"</span> for the
-                standard radius on articles
-              </li>
-              <li>
-                Use <span class="bold code_info">class="button"</span> for the
-                standard radius on buttons
-              </li>
-              <li>
-                Use <span class="bold code_info">class="icon"</span> for the
-                standard radius on icons
-              </li>
-            </ul>
-          </div>
-          <div class="dont">
-            <h3>Don'ts</h3>
-            <ul>
-              <li>Don`t use a radius that isn`t an increment of .25em.</li>
-              <li>
-                Don`t use a different radius on components which have a set
-                radius.
-              </li>
-            </ul>
-          </div>
-        </article>
-        <pre><code>
-        .example_article {
-          background-color: #ecf8f8;
-          color: #272932;
-          border-radius: .25em;
-          text-transform: uppercase;
-      }
-      
-      .example_button {
-          background-color: #ecf8f8;
-          color: #272932;
-          border-radius: 2.5em;
-          text-transform: uppercase;
-      }
-      
-      .example_icon {
-          background-color: #ecf8f8;
-          color: #272932;
-          border-radius: 3.5em;
-          text-transform: uppercase;
-      }
+  &lt;article class="example"&gt; &lt;/article&gt;
+
+  &lt;img class="icon"&gt; &lt;/img&gt;
   </code></pre>
       </section>
 
@@ -360,20 +315,9 @@
         </article>
 
         <pre><code>
-        h1{
-          font-size: 2em;
-          font-family: halton;
-        }
-
-        h2{
-          Font-family: 'halton-regular';
-          Font-size: 1.5em;
-        }
-
-        p {
-          font-size: .5em;
-          font-family: halton-italic;
-      }
+          &lt;h1&gt; text example &lt;h1&gt;
+          &lt;h2&gt; text example &lt;h2&gt;
+          &lt;p&gt; text example &lt;p&gt;
       </code></pre>
       </section>
 
@@ -405,27 +349,7 @@
           </div>
         </article>
         <pre> <code>
-    nav {
-    overflow: hidden;
-    font-family: 'Halton';
-    font-weight: 600;
-    }
-
-    nav a {
-    float: left;
-    display: block;
-    color: #FFF;
-    text-align: center;
-    padding: 14px 16px;
-    border-radius: 2em;
-    text-decoration: none;
-    }
-
-    nav a:hover {
-    background-color: #DDD;
-    color: Black;
-    }
-           
+          &lt;Nav class="H-nav"&gt; &lt;/Nav&gt;
         </code></pre>
       </section>
 
@@ -485,43 +409,40 @@
         <pre><code>
   /* OPTIONS */
 
-  .destructive {
-    background-color: #fb8b24;
-  }
-  
-  .recommended {
-    background-color: #519879;
-  }
-  
-  .minor {
-    background-color: transparent;
-    color: #519879;
-  }
+  &lt;button type="button" class="button recommended"&gt;
+  Recommended
+&lt;/button&gt;
 
-  .minor:hover {
-    text-decoration: underline;
-    transition: all 0.3s ease-in-out;
-  }
+&lt;button type="button" class="button"&gt;  
+  Button 
+&lt;/button&gt;
 
-  .button:hover {
-    filter: brightness(120%);
-    transition: all 0.3s ease-in-out;
-  }
+&lt;button type="button" class="button minor"&gt;  
+  Minor 
+&lt;/button&gt;
 
-  .button:active{
-    filter: brightness(80%);
-  }
-  
-  .button:disabled {
-    cursor: not-allowed;
-    opacity: 50%;
-  }
+&lt;button type="button" class="button destructive"&gt;  
+  Distrucitve 
+&lt;/button&gt;
 
-  .button:disabled:hover {
-    filter: none;
-    transition: all 0.3s ease-in-out;
-  }
-          
+
+/* DISABLED */
+     
+  &lt;button type="button" class="button recommended"&gt;
+  Recommended
+&lt;/button&gt;
+
+&lt;button type="button" class="button"&gt;  
+  Button 
+&lt;/button&gt;
+
+&lt;button type="button" class="button minor"&gt;  
+  Minor 
+&lt;/button&gt;
+
+&lt;button type="button" class="button destructive"&gt;  
+  Distrucitve 
+&lt;/button&gt;     
         </code></pre>
       </section>
 
@@ -575,6 +496,31 @@
                 <button type="button" class="button recommended">Send</button>
               </div>
             </div>
+          </div>
+          <label for="withHelpText">With help text</label>
+          <div class="form_group">
+            <input class="form-group_input" id="withHelpText" type="text" placeholder="Example text">
+            <small class="form-group_help">This is example text so you can see how it looks.</small>
+          </div>
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using form groups.</p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
+                    text"&gt;</span></p>
+                <p>Look at <span class="bold">05.Buttons</span> how you can chance the button color</p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span
+                    class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use a forms group without a <span class="bold code_info">&lt;label&gt;</span> </p>
+              </div>
+
+            </article>
+            <pre><code>
+    /* WITH A BUTTON */
             <label for="withHelpText">With help text</label>
             <div class="form_group">
               <input
@@ -625,44 +571,29 @@
               <pre><code>
   /* WITH A BUTTON */
 
-    .form_group {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    width: 100%;
-    }
-    .form-group_attachment {
-    margin: 0;
-    }
-    .form-group_attachment button {
-    margin: 0 0 0 -1px;
-    vertical-align: middle;
-    padding: 1.2em;
-    border-radius: 0 0.25em 0.25em 0;
-    line-height: normal;
-    }
-
+  &lt;label for="withButton"&gt; With a button &lt;label&gt;
+  &lt;div class="form_group"&gt;
+    &lt;input class="form-group_input" id="withButton" 
+    type="text" placeholder="Example text"&gt;
+    &lt;div class="form-group_attachment"&gt;
+      &lt;button type="button" class="button recommended"&gt;  
+        Send
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
   
-  /* WITH HELP TEKST */
+    /* WITH HELP TEKST */
 
-    .form_group {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    width: 100%;
-    }
-
-    small {
-    padding: 0 1em;
-    flex-basis: 100%;
-    display: inline-block;
-    font-size: 0.8em;
-    color: #ecf8f8;
-    opacity: 50%;
-    }
+    &lt;label for="withHelpText"&gt;With help text&lt;/label&gt;
+    &lt;div class="form_group"&gt;
+      &lt;input class="form-group_input" id="withHelpText" 
+      type="text" placeholder="Example text"&gt;
+      &lt;small class="form-group_help"&gt;
+        This is example text so you can see how it looks. 
+      &lt;/small&gt;
+    &lt;/div&gt;
         </code></pre>
             </div>
-          </article>
 
           <article class="forms_sections">
             <h3>Validation</h3>
@@ -739,37 +670,31 @@
 
   /* REQUIRED */   
 
-   .req {
-    color: #947EB0;
-    font-weight: bold;
-    }
+  &lt;label for="requiredState"&gt;
+    Required&lt;span class="req"&gt;*&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input class="form-group_input" id="requiredState"
+    type="text" placeholder="Example text" required&gt;
+  &lt;p&gt;&lt;span class="req"&gt;*&lt;/span&gt; - Required field&lt;/p&gt;
 
 
   /* VALID */  
 
-   .form_validation {
-    padding: 0.5em;
-    border-radius: 0.25em;
-    color: #272932;
-    }
-    .form_validation p {
-    padding: 0 0.5em;
-    }
-    .valid {
-    background-color: #519879;
-    }
+  &lt;label for="validState"&gt; Valid &lt;/label&gt;
+  &lt;div class="form_validation valid"&gt;
+    &lt;input id="validState" type="text"
+     placeholder="Example text"&gt;
+    &lt;p&gt;Save changes&lt;/p&gt;
+  &lt;/div&gt;
 
   /* INVALID */  
 
-    .form_validation {
-    padding: 0.5em;
-    border-radius: 0.25em;
-    color: #272932;
-    }
-
-   .invalid {
-    background-color: #FB8B24;
-    }
+  &lt;label for="invalidState"&gt;Invalid&lt;/label&gt;
+  &lt;div class="form_validation invalid"&gt;
+    &lt;input id="invalidState" type="text" 
+    placeholder="Example text"&gt;
+    &lt;p&gt;Save changes&lt;/p&lt;
+  &lt;/div&gt;
 
             </code></pre>
             </div>
@@ -792,6 +717,36 @@
               placeholder="Enter your message here"
             ></textarea>
 
+          <div class="dodont_forms">
+            <article class="info">
+              <div class="do">
+                <h3>Do's</h3>
+                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using forms text field.
+                </p>
+                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
+                    text"&gt;</span> <span class="bold code_info">&lt;placeholder="Enter your message here"&gt;</span>
+                </p>
+              </div>
+              <div class="dont">
+                <h3>Don'ts</h3>
+                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span
+                    class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
+                <p>Don't use a forms validation without a <span class="bold code_info">&lt;label&gt;</span> </p>
+              </div>
+
+            </article>
+            <pre><code>
+    /* TEXT INPUT */   
+              
+    &lt;label for="textInput"&gt;Text input&lt;/label&gt;
+    &lt;input class="fs-field-group__input" id="textInput" 
+    type="text" placeholder="Example Text"&gt; 
+              
+    /* TEXT FIELD */ 
+              
+    &lt;label for="textField"&gt;Text field&lt;/label&gt;
+    &lt;textarea id="textField" rows="8" cols="48" 
+    placeholder="Enter your message here"&gt;&lt;/textarea&gt;
             <div class="dodont_forms">
               <article class="info">
                 <div class="do">
