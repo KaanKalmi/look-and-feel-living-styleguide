@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrossmarX living styleguide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
   <header class="body__header">
     <h1>Styleguide</h1>
@@ -78,45 +86,56 @@
           component we round the edges by using multiplications of .25em.</q>
       </article>
 
-      <article class="info">
-        <div class="do">
-          <h3>Do's</h3>
-          <ul>
-            <li>Use <span class="bold code_info">class="example"</span> for the standard radius on articles</li>
-            <li>Use <span class="bold code_info">class="button"</span> for the standard radius on buttons</li>
-            <li>Use <span class="bold code_info">class="icon"</span> for the standard radius on icons</li>
-          </ul>
-        </div>
-        <div class="dont">
-          <h3>Don'ts</h3>
-          <ul>
-            <li>Don`t use a radius that isn`t an increment of .25em.</li>
-            <li>Don`t use a different radius on components which have a set radius. </li>
-          </ul>
-        </div>
-
-      </article>
-      <pre><code>
-      .example_article {
-        background-color: #ecf8f8;
-        color: #272932;
-        border-radius: .25em;
-        text-transform: uppercase;
-    }
-
-    .example_button {
-        background-color: #ecf8f8;
-        color: #272932;
-        border-radius: 2.5em;
-        text-transform: uppercase;
-    }
-
-    .example_icon {
-        background-color: #ecf8f8;
-        color: #272932;
-        border-radius: 3.5em;
-        text-transform: uppercase;
-    }
+        <article class="info">
+          <div class="do">
+            <h3>Do's</h3>
+            <ul>
+              <li>
+                Use <span class="bold code_info">class="example"</span> for the
+                standard radius on articles
+              </li>
+              <li>
+                Use <span class="bold code_info">class="button"</span> for the
+                standard radius on buttons
+              </li>
+              <li>
+                Use <span class="bold code_info">class="icon"</span> for the
+                standard radius on icons
+              </li>
+            </ul>
+          </div>
+          <div class="dont">
+            <h3>Don'ts</h3>
+            <ul>
+              <li>Don`t use a radius that isn`t an increment of .25em.</li>
+              <li>
+                Don`t use a different radius on components which have a set
+                radius.
+              </li>
+            </ul>
+          </div>
+        </article>
+        <pre><code>
+        .example_article {
+          background-color: #ecf8f8;
+          color: #272932;
+          border-radius: .25em;
+          text-transform: uppercase;
+      }
+      
+      .example_button {
+          background-color: #ecf8f8;
+          color: #272932;
+          border-radius: 2.5em;
+          text-transform: uppercase;
+      }
+      
+      .example_icon {
+          background-color: #ecf8f8;
+          color: #272932;
+          border-radius: 3.5em;
+          text-transform: uppercase;
+      }
   </code></pre>
     </section>
 
@@ -238,39 +257,31 @@
         </article>
       </div>
 
-      <article class="info">
+        <article class="info">
+          <div class="do">
+            <h3>Do's</h3>
+            <ul>
+              <li>Only use h1 for page titles</li>
+              <li>Only use full uppercase for h1</li>
+              <li>Only use h2 for article headings</li>
+              <li>Only use paragraphs for text</li>
+            </ul>
+          </div>
 
-        <div class="do">
-          <h3>Do's</h3>
-          <ul>
-            <li>
-              Only use h1 for page titles
-            </li>
-            <li>
-              Only use h2 for article headings
-            </li>
-            <li>
-              Only use paragraphs for text
-            </li>
-          </ul>
-        </div>
+          <div class="dont">
+            <h3>Don'ts</h3>
+            <ul>
+              <li>Dont use h1 for article headings</li>
+              <li>Never use lowercase in an h1</li>
+            </ul>
+          </div>
+        </article>
 
-        <div class="dont">
-          <h3>Don'ts</h3>
-          <ul>
-            <li>
-              Dont use h1 for article headings
-            </li>
-          </ul>
-        </div>
-
-      </article>
-
-      <pre><code>
-    h1{
-      font-size: 2em;
-      font-family: halton;
-    }
+        <pre><code>
+        h1{
+          font-size: 2em;
+          font-family: halton;
+        }
 
     h2{
       Font-family: 'halton-regular';
@@ -361,22 +372,37 @@
         <div class="do">
           <h3>Do's</h3>
 
-          <p>Use <span class="bold code_info">class="button"</span>for all the buttons</p>
-          <p>Add <span class="bold code_info">class="button recommended"</span> by recommended buttons</p>
-          <p>Add <span class="bold code_info">class="button minor"</span> by minor buttons</p>
-          <p>Add <span class="bold code_info">class="button distructive"</span> by distructive buttons</p>
-        </div>
-        <div class="dont">
-          <h3>Don'ts</h3>
-          <ul>
-            <li>Don't create/add other classes!!</li>
-            <li>Do not create different buttons than those shown in the example.</li>
-          </ul>
-        </div>
-
-      </article>
-      <pre><code>
-    /* OPTIONS */
+            <p>
+              Use <span class="bold code_info">class="button"</span>for all the
+              buttons
+            </p>
+            <p>
+              Add
+              <span class="bold code_info">class="button recommended"</span> by
+              recommended buttons
+            </p>
+            <p>
+              Add <span class="bold code_info">class="button minor"</span> by
+              minor buttons
+            </p>
+            <p>
+              Add
+              <span class="bold code_info">class="button distructive"</span> by
+              distructive buttons
+            </p>
+          </div>
+          <div class="dont">
+            <h3>Don'ts</h3>
+            <ul>
+              <li>Don't create/add other classes!!</li>
+              <li>
+                Do not create different buttons than those shown in the example.
+              </li>
+            </ul>
+          </div>
+        </article>
+        <pre><code>
+  /* OPTIONS */
 
     .destructive {
       background-color: #fb8b24;
@@ -456,37 +482,67 @@
               <span class="checkmark"></span>
             </div>
           </div> -->
-          <label for="withButton">With a button</label>
-          <div class="form_group">
-            <input class="form-group_input" id="withButton" type="text" placeholder="Example text">
-            <div class="form-group_attachment">
-              <button type="button" class="button recommended">Send</button>
+            <label for="withButton">With a button</label>
+            <div class="form_group">
+              <input
+                class="form-group_input"
+                id="withButton"
+                type="text"
+                placeholder="Example text"
+              />
+              <div class="form-group_attachment">
+                <button type="button" class="button recommended">Send</button>
+              </div>
             </div>
-          </div>
-          <label for="withHelpText">With help text</label>
-          <div class="form_group">
-            <input class="form-group_input" id="withHelpText" type="text" placeholder="Example text">
-            <small class="form-group_help">This is example text so you can see how it looks.</small>
-          </div>
-          <div class="dodont_forms">
-            <article class="info">
-              <div class="do">
-                <h3>Do's</h3>
-                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using form groups.</p>
-                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
-                    text"&gt;</span></p>
-                <p>Look at <span class="bold">05.Buttons</span> how you can chance the button color</p>
-              </div>
-              <div class="dont">
-                <h3>Don'ts</h3>
-                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span
-                    class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
-                <p>Don't use a forms group without a <span class="bold code_info">&lt;label&gt;</span> </p>
-              </div>
-
-            </article>
-            <pre><code>
-    /* WITH A BUTTON */
+            <label for="withHelpText">With help text</label>
+            <div class="form_group">
+              <input
+                class="form-group_input"
+                id="withHelpText"
+                type="text"
+                placeholder="Example text"
+              />
+              <small class="form-group_help"
+                >This is example text so you can see how it looks.</small
+              >
+            </div>
+            <div class="dodont_forms">
+              <article class="info">
+                <div class="do">
+                  <h3>Do's</h3>
+                  <p>
+                    Always use a
+                    <span class="bold code_info">&lt;label&gt;</span> element
+                    when using form groups.
+                  </p>
+                  <p>
+                    You may change the placeholder text in
+                    <span class="bold code_info"
+                      >&lt;placeholder="Example text"&gt;</span
+                    >
+                  </p>
+                  <p>
+                    Look at <span class="bold">05.Buttons</span> how you can
+                    chance the button color
+                  </p>
+                </div>
+                <div class="dont">
+                  <h3>Don'ts</h3>
+                  <p>
+                    Don't use an
+                    <span class="bold code_info">&lt;p&gt;</span> element
+                    instead of an
+                    <span class="bold code_info">&lt;label&gt;</span> for the
+                    forms name.
+                  </p>
+                  <p>
+                    Don't use a forms group without a
+                    <span class="bold code_info">&lt;label&gt;</span>
+                  </p>
+                </div>
+              </article>
+              <pre><code>
+  /* WITH A BUTTON */
 
     .form_group {
     display: flex;
@@ -618,36 +674,52 @@
           <label for="textField">Text field</label>
           <textarea id="textField" rows="8" cols="48" placeholder="Enter your message here"></textarea>
 
-          <div class="dodont_forms">
-            <article class="info">
-              <div class="do">
-                <h3>Do's</h3>
-                <p>Always use a <span class="bold code_info">&lt;label&gt;</span> element when using forms text field.
-                </p>
-                <p>You may change the placeholder text in <span class="bold code_info">&lt;placeholder="Example
-                    text"&gt;</span> <span class="bold code_info">&lt;placeholder="Enter your message here"&gt;</span>
-                </p>
-              </div>
-              <div class="dont">
-                <h3>Don'ts</h3>
-                <p>Don't use an <span class="bold code_info">&lt;p&gt;</span> element instead of an <span
-                    class="bold code_info">&lt;label&gt;</span> for the forms name.</p>
-                <p>Don't use a forms validation without a <span class="bold code_info">&lt;label&gt;</span> </p>
-              </div>
+            <div class="dodont_forms">
+              <article class="info">
+                <div class="do">
+                  <h3>Do's</h3>
+                  <p>
+                    Always use a
+                    <span class="bold code_info">&lt;label&gt;</span> element
+                    when using forms text field.
+                  </p>
+                  <p>
+                    You may change the placeholder text in
+                    <span class="bold code_info"
+                      >&lt;placeholder="Example text"&gt;</span
+                    >
+                    <span class="bold code_info"
+                      >&lt;placeholder="Enter your message here"&gt;</span
+                    >
+                  </p>
+                </div>
+                <div class="dont">
+                  <h3>Don'ts</h3>
+                  <p>
+                    Don't use an
+                    <span class="bold code_info">&lt;p&gt;</span> element
+                    instead of an
+                    <span class="bold code_info">&lt;label&gt;</span> for the
+                    forms name.
+                  </p>
+                  <p>
+                    Don't use a forms validation without a
+                    <span class="bold code_info">&lt;label&gt;</span>
+                  </p>
+                </div>
+              </article>
+              <pre><code>
+  /* TEXT INPUT */   
 
-            </article>
-            <pre><code>
-    /* TEXT INPUT */   
-          ad    
-    &lt;label for="textInput"&gt;Text input&lt;/label&gt;
-    &lt;input class="fs-field-group__input" id="textInput" 
-    type="text" placeholder="Example Text"&gt; 
-              
-    /* TEXT FIELD */ 
-              
-    &lt;label for="textField"&gt;Text field&lt;/label&gt;
-    &lt;textarea id="textField" rows="8" cols="48" 
-    placeholder="Enter your message here"&gt;&lt;/textarea&gt;
+  &lt;label for="textInput"&gt;Text input&lt;/label&gt;
+  &lt;input class="fs-field-group__input" id="textInput" 
+  type="text" placeholder="Example Text"&gt; 
+  
+  /* TEXT FIELD */ 
+
+  &lt;label for="textField"&gt;Text field&lt;/label&gt;
+  &lt;textarea id="textField" rows="8" cols="48" 
+  placeholder="Enter your message here"&gt;&lt;/textarea&gt;
             </code></pre>
           </div>
         </article>
