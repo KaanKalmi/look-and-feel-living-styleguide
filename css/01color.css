@@ -1,13 +1,8 @@
 .black {
-  position: relative;
   font-size: 20px;
-  top: -3%;
-  left: -2%;
   font-family: sans-serif;
   border-top: 3px solid;
-  width: 30%;
   border-left: 3px solid;
-  height: 79%;
   border-bottom: 3px solid;
   border-right: 3px solid;
   text-align: center;
@@ -19,10 +14,8 @@
 }
 
 .purple {
-  position: absolute;
   font-size: 20px;
-  top: 42%;
-  left: 27%;
+
   font-family: sans-serif;
   border-top: 4px solid;
   width: 10%;
@@ -39,10 +32,8 @@
 }
 
 .green {
-  position: absolute;
   font-size: 20px;
-  top: 42%;
-  left: 38%;
+
   font-family: sans-serif;
   border-top: 4px solid;
   width: 10%;
@@ -58,10 +49,8 @@
 }
 
 .white {
-  position: absolute;
   font-size: 20px;
-  left: 60%;
-  top: 42%;
+
   bottom: 47%;
   font-family: sans-serif;
   border-top: 3px solid;
@@ -78,10 +67,8 @@
 }
 
 .accent {
-  position: absolute;
   font-size: 20px;
-  left: 49%;
-  top: 42%;
+
   font-family: sans-serif;
   border-top: 4px solid;
   border-left: 4px solid;
@@ -94,4 +81,8 @@
   background-color: #fb8b24;
   color: #000000;
   width: 10%;
+}
+
+.colors {
+  display: flex;
 }
