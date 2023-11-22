@@ -65,24 +65,18 @@
 }
 
 :root {
-  /*color custom properties*/
-  --primary: #ad97c9;
+  --primary: #AD97C9;
   --background: #272932;
   --text: #ecf8f8;
   --secondary: #519879;
   --accent: #fb8b24;
-
-  /*radius custom properties*/
-  --btn-radius:2.5em;
-  --sec-radius:.25em;
-  --icon-radius:3.5em;
 }
 
 body {
   margin: 0;
-  font-family: "Halton-regular", sans-serif;
+  font-family: "Halton", sans-serif;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.5em;
   display: block;
   background-color: #272932;
   color: #ecf8f8;
@@ -96,11 +90,7 @@ header.body__header {
 }
 
 main {
-  margin: 0 .8em .8em 1em;
-}
-
-section {
-  display: block;
+  margin: 0 10em 10em 10em;
 }
 
 h1 {
@@ -141,7 +131,7 @@ h4 {
 
 p {
   font-weight: 100;
-  font-family: "Halton-regular", sans-serif;
+  font-family: "halton", sans-serif;
 }
 
 /* LAY-OUT */
@@ -165,10 +155,10 @@ section pre {
   position: relative;
 
   margin: 0 0.5em;
-  background-color: #ffffff;
+  background-color: #ecf8f8;
   border-radius: 0.25em;
 
-  overflow: visible;
+  overflow: auto;
 }
 
 pre::before {
@@ -247,51 +237,4 @@ section {
   filter: brightness(120%);
   padding: 0 0.2em;
   border-radius: 0.25em;
-}
-
-
-/* Medium screens tablets */
-@media (min-width:321px) and (max-width:768px) {
-  body {
-    font-size: 1.3em;
-    max-width: 75%;
-  }
-
-  .grid-container {
-    width: 90%;
-  }
-
-  main {
-    margin: 0 5em 5em 5em;
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "titel"
-      "voorbeeld"
-      "info"
-      "code";
-  }
-}
-
-/* Larger screens */
-@media (min-width:769px) {
-  body {
-    font-size: 1.5em;
-  }
-
-  main {
-    margin: 0 10em 10em 10em;
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "titel titel"
-      "voorbeeld voorbeeld"
-      "info code";
-  }
 }

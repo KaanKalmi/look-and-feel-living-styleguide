@@ -4,6 +4,7 @@
     font-weight: 600;
     font-family: 'Halton-bold', sans-serif;
     grid-area: h1;
+    text-transform: uppercase;
 }
 
 .h2 {
