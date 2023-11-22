@@ -65,7 +65,7 @@
 }
 
 :root {
-  --primary: #AD97C9;
+  --primary: #ad97c9;
   --background: #272932;
   --text: #ecf8f8;
   --secondary: #519879;
@@ -159,7 +159,7 @@ section pre {
   position: relative;
 
   margin: 0 0.5em;
-  background-color: #ecf8f8;
+  background-color: #ffffff;
   border-radius: 0.25em;
 
   overflow: auto;
@@ -263,7 +263,6 @@ section {
       "info"
       "code";
   }
-
 }
 
 @media (min-width: 768px) {
@@ -285,5 +284,4 @@ section {
       "voorbeeld voorbeeld"
       "info code";
   }
-
 }
