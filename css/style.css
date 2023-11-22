@@ -276,33 +276,6 @@ section {
   }
 }
 
-/* Medium screens tablets */
-@media (min-width:321px) and (max-width:768px) {
-  body {
-    font-size: 1.3em;
-    max-width: 75%;
-  }
-
-  .grid-container {
-    width: 90%;
-  }
-
-  main {
-    margin: 0 5em 5em 5em;
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "titel"
-      "voorbeeld"
-      "info"
-      "code";
-  }
-
-}
-
 /* Larger screens */
 @media (min-width:769px) {
   body {
@@ -321,5 +294,4 @@ section {
       "voorbeeld voorbeeld"
       "info code";
   }
-
 }
