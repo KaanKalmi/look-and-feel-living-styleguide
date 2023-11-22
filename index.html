@@ -429,24 +429,42 @@
         <pre><code>
   /* OPTIONS */
 
-  &lt;button type="button" class="button recommended"&gt;
-  Recommended
-&lt;/button&gt;
+    .destructive {
+      background-color: #fb8b24;
+    }
 
-&lt;button type="button" class="button"&gt;  
-  Button 
-&lt;/button&gt;
+    .recommended {
+      background-color: #519879;
+    }
+  
+    .minor {
+      background-color: transparent;
+      color: #519879;
+    }
 
-&lt;button type="button" class="button minor"&gt;  
-  Minor 
-&lt;/button&gt;
+    .minor:hover {
+      text-decoration: underline;
+      transition: all 0.3s ease-in-out;
+    }
 
-&lt;button type="button" class="button destructive"&gt;  
-  Distrucitve 
-&lt;/button&gt;
+    .button:hover {
+      filter: brightness(120%);
+      transition: all 0.3s ease-in-out;
+    }
 
+    .button:active{
+      filter: brightness(80%);
+    }
+  
+    .button:disabled {
+      cursor: not-allowed;
+      opacity: 50%;
+    }
 
-/* DISABLED */
+    .button:disabled:hover {
+      filter: none;
+      transition: all 0.3s ease-in-out;
+    }
           
         </code></pre>
       </section>
@@ -576,29 +594,44 @@
               <pre><code>
   /* WITH A BUTTON */
 
-  &lt;label for="withButton"&gt; With a button &lt;label&gt;
-  &lt;div class="form_group"&gt;
-    &lt;input class="form-group_input" id="withButton" 
-    type="text" placeholder="Example text"&gt;
-    &lt;div class="form-group_attachment"&gt;
-      &lt;button type="button" class="button recommended"&gt;  
-        Send
-      &lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    .form_group {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    }
+    .form-group_attachment {
+    margin: 0;
+    }
+    .form-group_attachment button {
+    margin: 0 0 0 -1px;
+    vertical-align: middle;
+    padding: 1.2em;
+    border-radius: 0 0.25em 0.25em 0;
+    line-height: normal;
+    }
+
   
     /* WITH HELP TEKST */
 
-    &lt;label for="withHelpText"&gt;With help text&lt;/label&gt;
-    &lt;div class="form_group"&gt;
-      &lt;input class="form-group_input" id="withHelpText" 
-      type="text" placeholder="Example text"&gt;
-      &lt;small class="form-group_help"&gt;
-        This is example text so you can see how it looks. 
-      &lt;/small&gt;
-    &lt;/div&gt;
+    .form_group {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    }
+
+    small {
+    padding: 0 1em;
+    flex-basis: 100%;
+    display: inline-block;
+    font-size: 0.8em;
+    color: #ecf8f8;
+    opacity: 50%;
+    }
         </code></pre>
             </div>
+          </article>
 
           <article class="forms_sections">
             <h3>Validation</h3>
@@ -675,31 +708,37 @@
 
   /* REQUIRED */   
 
-  &lt;label for="requiredState"&gt;
-    Required&lt;span class="req"&gt;*&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;input class="form-group_input" id="requiredState"
-    type="text" placeholder="Example text" required&gt;
-  &lt;p&gt;&lt;span class="req"&gt;*&lt;/span&gt; - Required field&lt;/p&gt;
+   .req {
+    color: #947EB0;
+    font-weight: bold;
+    }
 
 
   /* VALID */  
 
-  &lt;label for="validState"&gt; Valid &lt;/label&gt;
-  &lt;div class="form_validation valid"&gt;
-    &lt;input id="validState" type="text"
-     placeholder="Example text"&gt;
-    &lt;p&gt;Save changes&lt;/p&gt;
-  &lt;/div&gt;
+   .form_validation {
+    padding: 0.5em;
+    border-radius: 0.25em;
+    color: #272932;
+    }
+    .form_validation p {
+    padding: 0 0.5em;
+    }
+    .valid {
+    background-color: #519879;
+    }
 
   /* INVALID */  
 
-  &lt;label for="invalidState"&gt;Invalid&lt;/label&gt;
-  &lt;div class="form_validation invalid"&gt;
-    &lt;input id="invalidState" type="text" 
-    placeholder="Example text"&gt;
-    &lt;p&gt;Save changes&lt;/p&lt;
-  &lt;/div&gt;
+    .form_validation {
+    padding: 0.5em;
+    border-radius: 0.25em;
+    color: #272932;
+    }
+
+   .invalid {
+    background-color: #FB8B24;
+    }
 
             </code></pre>
             </div>
