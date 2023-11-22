@@ -4,9 +4,9 @@
     text-align: center;
     height: 8em;
     width: 8em;
-    background-color: #ecf8f8;
-    color: #272932;
-    border-radius: .25em;
+    background-color: var(--text);
+    color: var(--background);
+    border-radius: var(--sec-radius);
     font-size: .75em;
     margin-bottom: .5em;
     margin-left: 4em;
@@ -20,9 +20,9 @@
     text-align: center;
     /* height: 2em; */
     /* width: 9.25em; */
-    background-color: #ecf8f8;
-    color: #272932;
-    border-radius: 2.5em;
+    background-color: var(--text);
+    color: var(--background);
+    border-radius: var(--btn-radius);
     font-size: .75em;
     margin-bottom: .5em;
     margin-left: 2.5em;
@@ -38,9 +38,9 @@
     text-align: center;
     height: 3em;
     width: 3em;
-    background-color: #ecf8f8;
-    color: #272932;
-    border-radius: 3.5em;
+    background-color: var(--text);
+    color: var(--background);
+    border-radius: var(--icon-radius);
     font-size: .75em;
     margin-bottom: .5em;
     padding-top: 1em;

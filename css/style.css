@@ -71,6 +71,11 @@
   --text: #ecf8f8;
   --secondary: #519879;
   --accent: #fb8b24;
+  
+  /*radius custom properties*/
+  --btn-radius:2.5em;
+  --sec-radius:.25em;
+  --icon-radius:3.5em;
 }
 
 body {
