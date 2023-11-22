@@ -172,7 +172,7 @@ section pre {
 }
 
 pre::before {
-  content: "HTML";
+  content: "CSS";
   font-size: 0.8em;
   color: #272932;
   position: absolute;
