@@ -43,12 +43,10 @@
   }
   
   .destructive {
-    background-color: var(--accent);
-  }
+    background-color: var(--accent);  }
   
   .recommended {
-    background-color: var(--secondary);
-  }
+    background-color: var(--secondary);  }
   
   .minor {
     background-color: transparent;

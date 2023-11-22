@@ -65,13 +65,13 @@
 }
 
 :root {
-  /*color custom properties*/
-  --primary: #ad97c9;
+  --primary: #AD97C9;
+  --primary: #AD97C9;
   --background: #272932;
   --text: #ecf8f8;
   --secondary: #519879;
   --accent: #fb8b24;
-
+  
   /*radius custom properties*/
   --btn-radius:2.5em;
   --sec-radius:.25em;
@@ -82,7 +82,7 @@ body {
   margin: 0;
   font-family: "Halton-regular", sans-serif;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.5em;
   display: block;
   background-color: #272932;
   color: #ecf8f8;
@@ -96,11 +96,7 @@ header.body__header {
 }
 
 main {
-  margin: 0 .8em .8em 1em;
-}
-
-section {
-  display: block;
+  margin: 0 10em 10em 10em;
 }
 
 h1 {
@@ -165,10 +161,10 @@ section pre {
   position: relative;
 
   margin: 0 0.5em;
-  background-color: #ffffff;
+  background-color: #ecf8f8;
   border-radius: 0.25em;
 
-  overflow: visible;
+  overflow: auto;
 }
 
 pre::before {
@@ -249,46 +245,15 @@ section {
   border-radius: 0.25em;
 }
 
-
-/* Medium screens tablets */
-@media (min-width:321px) and (max-width:768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     font-size: 1.3em;
-    max-width: 75%;
-  }
-
-  .grid-container {
-    width: 90%;
+    /* Adjusted for tablets */
   }
 
   main {
     margin: 0 5em 5em 5em;
-  }
-
-  section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "titel"
-      "voorbeeld"
-      "info"
-      "code";
-  }
-}
-
-/* Medium screens tablets */
-@media (min-width:321px) and (max-width:768px) {
-  body {
-    font-size: 1.3em;
-    max-width: 75%;
-  }
-
-  .grid-container {
-    width: 90%;
-  }
-
-  main {
-    margin: 0 5em 5em 5em;
+    /* Adjusted for tablets */
   }
 
   section {
@@ -303,14 +268,15 @@ section {
 
 }
 
-/* Larger screens */
-@media (min-width:769px) {
+@media (min-width: 768px) {
   body {
     font-size: 1.5em;
+    /* Adjusted for larger screens */
   }
 
   main {
     margin: 0 10em 10em 10em;
+    /* Adjusted for larger screens */
   }
 
   section {

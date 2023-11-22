@@ -1,25 +1,31 @@
 .black {
   font-size: 20px;
+  top: -40%;
+  left: 10%;
   font-family: sans-serif;
-  border-top: 3px solid;
-  border-left: 3px solid;
-  border-bottom: 3px solid;
-  border-right: 3px solid;
+  border-top: 4px solid;
+  width: 55%;
+  border-left: 4px solid;
+  height: 50%;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
   text-align: center;
   border-radius: 5px;
-  border-color: #ffffff;
+  border-color: #272932;
   background-color: #272932;
   color: rgb(255, 255, 255);
-  margin: 2%;
 }
 
 .purple {
+  position: relative;
   font-size: 20px;
+  top: -40%;
+  left: -30%;
   font-family: sans-serif;
   border-top: 4px solid;
-  width: 10%;
+  width: 55%;
   border-left: 4px solid;
-  height: 10%;
+  height: 50%;
   border-bottom: 4px solid;
   border-right: 4px solid;
   text-align: center;
@@ -27,17 +33,18 @@
   border-color: #947eb0;
   background-color: #947eb0;
   color: rgb(0, 0, 0);
-  bottom: 30%;
 }
 
 .green {
+  position: relative;
   font-size: 20px;
-
+  top: -158%;
+  left: 130%;
   font-family: sans-serif;
   border-top: 4px solid;
-  width: 10%;
+  width: 55%;
   border-left: 4px solid;
-  height: 10%;
+  height: 55.7%;
   border-bottom: 4px solid;
   border-right: 4px solid;
   text-align: center;
@@ -48,16 +55,17 @@
 }
 
 .white {
+  position: relative;
   font-size: 20px;
-
-  bottom: 47%;
+  top: -80%;
+  left: -91%;
   font-family: sans-serif;
-  border-top: 3px solid;
-  width: 11%;
-  border-left: 3px solid;
-  height: 10.5%;
-  border-bottom: 3px solid;
-  border-right: 3px solid;
+  border-top: 4px solid;
+  width: 56.5%;
+  border-left: 4px solid;
+  height: 55.7%;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
   text-align: center;
   border-radius: 5px;
   border-color: #000000;
@@ -65,13 +73,16 @@
   color: rgb(0, 0, 0);
 }
 
-.accent {
+.juice {
+  position: absolute;
   font-size: 20px;
-
+  left: 272%;
+  top: 26.2%;
   font-family: sans-serif;
   border-top: 4px solid;
+  width: 55%;
   border-left: 4px solid;
-  height: 10%;
+  height: 16.6%;
   border-bottom: 4px solid;
   border-right: 4px solid;
   text-align: center;
@@ -79,7 +90,7 @@
   border-color: #fb8b24;
   background-color: #fb8b24;
   color: #000000;
-  width: 10%;
+  width: 220%;
 }
 
 .colors {
