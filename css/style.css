@@ -76,6 +76,11 @@
   --sec-radius:.25em;
   --icon-radius:3.5em;
 
+  /*TYPOGRAPHY*/
+  --thin: 400; /* Halton-italic */
+  --chubby: 600 ; /* Halton-regular */
+  --fat: 800; /* Halton-bold */
+
   /* BUTTON */
   --btn-hover: brightness(120%);
   --btn-active: brightness(80%);
