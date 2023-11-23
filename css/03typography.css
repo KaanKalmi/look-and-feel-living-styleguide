@@ -1,7 +1,7 @@
 
 .h1 {
     font-size: 1em;
-    font-weight: var(fat)
+    font-weight: var(fat);
     font-family: 'Halton-bold', sans-serif;
     grid-area: h1;
 }
