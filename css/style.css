@@ -66,7 +66,6 @@
 
 :root {
   --primary: #AD97C9;
-  --primary: #AD97C9;
   --background: #272932;
   --text: #ecf8f8;
   --secondary: #519879;
@@ -76,6 +75,17 @@
   --btn-radius:2.5em;
   --sec-radius:.25em;
   --icon-radius:3.5em;
+
+  /* BUTTON */
+  --btn-hover: brightness(120%);
+  --btn-active: brightness(80%);
+
+  /* FORMS */
+  --forms-focus: 3px solid var(--primary);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

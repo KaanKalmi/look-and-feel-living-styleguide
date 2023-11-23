@@ -15,7 +15,7 @@
     padding: 0.75em 2em;
     font-size: 0.65em;
     text-transform: uppercase;
-    border-radius: 40px;
+    border-radius: var(--btn-radius);
     border-style: none;
     color: var(--background);
     background-color: var(--primary);
@@ -26,11 +26,11 @@
   }
 
   .button:hover {
-    filter: brightness(120%);
+    filter: var(--btn-hover);
   }
 
   .button:active{
-    filter: brightness(80%);
+    filter: var(--btn-active);
   }
   
   .button:disabled {

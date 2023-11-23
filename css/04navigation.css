@@ -30,8 +30,12 @@ nav a:hover {
     color: #DDD;
     text-align: center;
     text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
 }
 
 .nav a:hover{
     color: #947eb0;
+    text-decoration: underline;
 }
