@@ -10,7 +10,7 @@
 .example .forms_sections {
   margin-bottom: 2em;
   padding-bottom: 2em;
-  border-bottom: 0.5px solid var(--text);
+  border-bottom: 0.5px solid var(--clr-text);
 }
 
 label:first-child {
@@ -31,12 +31,12 @@ input {
     text-transform: uppercase;
     border-radius: 0.25em;
     border: none;
-    color: var(--background);
-    background-color: var(--text);
-    border: 3px solid var(--text);
+    color: var(--clr-background);
+    background-color: var(--clr-text);
+    border: 3px solid var(--clr-text);
 }
 input::placeholder {
-    color: var(--background);
+    color: var(--clr-background);
     opacity: 50%;
     font-family: "Halton-regular", sans-serif;
 }
@@ -54,11 +54,11 @@ textarea {
     border-radius: 0.25em;
     border: none;
     color: #272932;
-    background-color: var(--text);
-    border: 3px solid var(--text);
+    background-color: var(--clr-text);
+    border: 3px solid var(--clr-text);
 }
 textarea::placeholder {
-    color: var(--background);
+    color: var(--clr-background);
     opacity: 50%;
     font-family: "Halton-regular", sans-serif;
 }
@@ -90,26 +90,26 @@ small {
     flex-basis: 100%;
     display: inline-block;
     font-size: 0.8em;
-    color: var(--text);
+    color: var(--clr-text);
     opacity: 50%;
 }
 .req {
-    color: var(--primary);
+    color: var(--clr-primary);
     font-weight: bold;
 }
 .form_validation {
     padding: 0.5em;
     border-radius: 0.25em;
-    color: var(--background);
+    color: var(--clr-background);
 }
 .form_validation p {
     padding: 0 0.5em;
 }
 .valid {
-    background-color: var(--secondary);
+    background-color: var(--clr-secondary);
 }
 .invalid {
-    background-color: var(--accent);
+    background-color: var(--clr-accent);
 }
 .forms ul {
     list-style: none;
@@ -147,10 +147,10 @@ small {
 .select_container {
   margin-top: 1em;
   position: relative;
-  color: var(--background);
+  color: var(--clr-background);
   width: 50%;
   
-  background-color: var(--primary);
+  background-color: var(--clr-primary);
   border-radius: 1000px;
 }
 
@@ -165,8 +165,8 @@ small {
 
   border: none;
   border-radius: 1000px;
-  color: var(--background);
-  background-color: var(--primary);
+  color: var(--clr-background);
+  background-color: var(--clr-primary);
 }
 
 /* ARROW */
@@ -179,7 +179,7 @@ small {
  height: 0;
  border-left: .5em solid transparent;
  border-right: .5em solid transparent;
- border-top: .5em solid var(--primary);
+ border-top: .5em solid var(--clr-primary);
  border-radius: 1000px;
  clear: both;
 
@@ -192,8 +192,8 @@ small {
   bottom: 0;
  width: 2em;
  height: 70%;
- background-color: var(--background);
- border: 3px solid var(--primary);
+ background-color: var(--clr-background);
+ border: 3px solid var(--clr-primary);
  border-radius: var(--btn-radius);
  clear: both;
 
@@ -218,8 +218,8 @@ small {
   display: flex;
   justify-items: center;
   gap: 2em;
-  background-color: var(--primary);
-  color: var(--background);
+  background-color: var(--clr-primary);
+  color: var(--clr-background);
   text-transform: uppercase;
   padding: .2em;
   height: 2em;
@@ -232,8 +232,8 @@ small {
 
 .checkbox_container li::before{
   content: '';
-  background-color: var(--background);
-  border: 3px solid var(--primary);
+  background-color: var(--clr-background);
+  border: 3px solid var(--clr-primary);
   text-transform: uppercase;
   position: absolute;
   left: 0;
