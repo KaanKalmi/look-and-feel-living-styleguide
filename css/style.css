@@ -65,11 +65,11 @@
 }
 
 :root {
-  --primary: #AD97C9;
-  --background: #272932;
-  --text: #ecf8f8;
-  --secondary: #519879;
-  --accent: #fb8b24;
+  --clr-primary: #AD97C9;
+  --clr-background: #272932;
+  --clr-text: #ecf8f8;
+  --clr-secondary: #519879;
+  --clr-accent: #fb8b24;
   
   /*radius custom properties*/
   --btn-radius:2.5em;
@@ -86,7 +86,7 @@
   --btn-active: brightness(80%);
 
   /* FORMS */
-  --forms-focus: 3px solid var(--primary);
+  --forms-focus: 3px solid var(--clr-primary);
 }
 
 html {
