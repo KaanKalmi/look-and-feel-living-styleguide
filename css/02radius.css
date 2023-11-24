@@ -4,8 +4,8 @@
   text-align: center;
   height: 8em;
   width: 8em;
-  background-color: var(--text);
-  color: var(--background);
+  background-color: var(--clr-text);
+  color: var(--clr-background);
   border-radius: var(--sec-radius);
   font-size: 0.75em;
   margin-bottom: 0.5em;
@@ -20,8 +20,8 @@
   text-align: center;
   /* height: 2em; */
   /* width: 9.25em; */
-  background-color: var(--text);
-  color: var(--background);
+  background-color: var(--clr-text);
+  color: var(--clr-background);
   border-radius: var(--btn-radius);
   font-size: 0.75em;
   margin-bottom: 0.5em;
@@ -38,8 +38,8 @@
   text-align: center;
   height: 3em;
   width: 3em;
-  background-color: var(--text);
-  color: var(--background);
+  background-color: var(--clr-text);
+  color: var(--clr-background);
   border-radius: var(--icon-radius);
   font-size: 0.75em;
   margin-bottom: 0.5em;
